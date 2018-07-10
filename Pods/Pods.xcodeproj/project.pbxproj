@@ -1,0 +1,1787 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00131F99856A2D79D0452EE6036C40D1 /* lang_fil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96D8E8B7890473267A6F9248999D2F3 /* lang_fil.swift */; };
+		0275E1CFE52E6565272CB9158BCE7934 /* Date+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87807464500145415034A8D7A8F4872D /* Date+Math.swift */; };
+		051C530F1C5B0693E08DDABD5C68EFD9 /* Date+Compare.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09F162E61ADF76710700F6D638AACBA /* Date+Compare.swift */; };
+		06EF9979D10A623DC65A7F0B1267F51A /* lang_az.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6536BFC9A395C658696BEEDCB9DA91 /* lang_az.swift */; };
+		07A95BEE5394DE2A669DB4B9693D0F77 /* TimePeriodCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537A1F32774DACA06053DA90D391063E /* TimePeriodCollection.swift */; };
+		07FCC1781C13851736EDD1931A03FEE5 /* lang_en.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45872A0B6A3838BA4AEB8B29E5BD8EFA /* lang_en.swift */; };
+		0976F39CB12B58CE5755D40500D07985 /* lang_dz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F1ACCD40583FF45A2D2D3310A3925A /* lang_dz.swift */; };
+		0ADFAE2E6D75CE023E1D83948279B45F /* lang_sr_Latn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A329C43EE1CBBA177027CBBC994F56A /* lang_sr_Latn.swift */; };
+		0BA78805650F02BD9B8D7C9EA0959C4D /* lang_kn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A5DE11370553A2D75B3B3648D4D4E3 /* lang_kn.swift */; };
+		0BF42BAC46E156FE839B90AC57B3F4A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		0D79363A590AB56CE55087CC2C261D68 /* lang_ksh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1540F79C2FDFC4BCC76229D4BCAFE /* lang_ksh.swift */; };
+		102436F08C8B73A04473121103923230 /* lang_ru.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F2E36D8BA30B492A45472CD2007520 /* lang_ru.swift */; };
+		107BF9719F1B1EF9DE74FAE1135FDE2D /* lang_es.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D9385DCC410747E76C83D9092616FF /* lang_es.swift */; };
+		118CFE0AAF1AE251D69C8AC1775FAB55 /* JBDatePickerEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB33CD7E4F20046DF6C83C20F36B710D /* JBDatePickerEnums.swift */; };
+		1283F19D045135E5D0B9683DFD980C80 /* TimePeriodChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB96AEC5F390E4ED2BFB0DBA2B0656C4 /* TimePeriodChain.swift */; };
+		136A4C21673C9ACE9B7401C23ACF52D1 /* lang_fur.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AC3A535842A979B2CA0C04D1D3F195 /* lang_fur.swift */; };
+		146661DAA790C18C6FD756AEAFE42503 /* JBDatePickerWeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA1CDEE757BA142E3E4BE6492FD64C7 /* JBDatePickerWeekView.swift */; };
+		158982561653DDAF541A9C44D258FFD1 /* lang_fr_CA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D13B1DA3B7DCDE3E99623F136DFA62 /* lang_fr_CA.swift */; };
+		15D92786B20F0CF51147324EB1D498E5 /* lang_te.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1918911B7E15AE007EAC92CE37893D4 /* lang_te.swift */; };
+		16AA9147E3C6BB79E9BB9A7F95549267 /* lang_kk.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A4C32724DFC05604BEEC3BE9F0DB34 /* lang_kk.swift */; };
+		17D2D7C057B6F8312D6921EBA4903F2C /* lang_id.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5CF35A918D521888FE05C3F033B4F1 /* lang_id.swift */; };
+		198834082E798E5EAA74283D144F08BB /* lang_se.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10110C4F15ED535A125EB77A460F0D7B /* lang_se.swift */; };
+		1DA09CF801E9D6F6DFCC67A7E69A6028 /* lang_zh_Hant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE6C3006A7E3A2CAB045AAA002C59A7 /* lang_zh_Hant.swift */; };
+		1E4FC7304D41CF6C829D3BC645676925 /* JBDatePickerWeekDaysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A684DBA837876873298AA02792492297 /* JBDatePickerWeekDaysView.swift */; };
+		1ECB6056A17395DEEB4E84C213DB5BFD /* lang_my.swift in Sources */ = {isa = PBXBuildFile; fileRef = F021AA29447151B829B9E6201F043552 /* lang_my.swift */; };
+		22661AAC3F82D0BF916F361D54F82790 /* DateInRegion+Compare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1260F2080D9FDC0C22CE043A21F104DF /* DateInRegion+Compare.swift */; };
+		24CE6383957AD79BCC332B8AA4CE13EC /* TimePeriodGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0154EB0DCB0CAE37370FFBD4E2BF5A /* TimePeriodGroup.swift */; };
+		250D891C8866123A36CB35BFDAD64065 /* DateRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465F311317F69E8673A349D8394D3D89 /* DateRepresentable.swift */; };
+		266DE0A813CE465574D1595647AB1CA2 /* JBDatePickerDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED941F99118DFB1CEC532DA1101C8680 /* JBDatePickerDayView.swift */; };
+		267740924F13A37FCD2F69488494D555 /* Pods-calendar2Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03556D4251CA515467F0190D2B47DCC0 /* Pods-calendar2Tests-dummy.m */; };
+		29C27923BFC8C166D98D50B6534910BE /* lang_hy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EFBB599AEFD02E31BD067A0B967BB8 /* lang_hy.swift */; };
+		29FD61F01AD11CCB140715328897CDF5 /* lang_fa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2BDB276B51DF73C5B4DF2810AAE4A5 /* lang_fa.swift */; };
+		2C761347B18E3CC826C766E1029668C5 /* lang_hsb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9ACDBB8F3F30DDF53849D6BF71AA4E /* lang_hsb.swift */; };
+		2CDA5032F0308D32693699D3C993E88C /* lang_sq.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CBBA84124F73867435F9F8224C13FF /* lang_sq.swift */; };
+		2DEAA2FC7CA49FF6EF86A4635AA81214 /* JBFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8B1320F2E20FBA309306CC8EFD5762 /* JBFont.swift */; };
+		2F67B12F0822CC350DEF8EE948078C06 /* lang_el.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215DA23C591E0D2C2AE61461A7C88FA3 /* lang_el.swift */; };
+		307B45C7BD1CE35470E1EE192AE77566 /* lang_to.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0945F61BBBF7A0EA2071DE2EA7172109 /* lang_to.swift */; };
+		30A530262409691F4184CDC65CBF7696 /* lang_zh_Hant_MO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAA81C82259EAD9C87FD32DDA8F6D97 /* lang_zh_Hant_MO.swift */; };
+		32DBB3D321469F27C29072F32226BB16 /* lang_lkt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4217280BB7491F145E08F4B8B9411D24 /* lang_lkt.swift */; };
+		338814034E846F154654632C4FF81C1F /* lang_sd.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A273C737D2FD62CB0E1C5EF98E4665 /* lang_sd.swift */; };
+		34D6BC24C11A7B8CE81257122B696CEB /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02797ECD5E228C82777C16FC4792107 /* Region.swift */; };
+		353157957D48F10C1250A4FE7EE77209 /* lang_ro.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EA0179B215841F30FB6ABD01FFE052 /* lang_ro.swift */; };
+		3538AE404A8B8748E1DB683C4D1D2B45 /* lang_hi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C5FFEB5D2133658A605E04595CBD60 /* lang_hi.swift */; };
+		356ECFD5A6DDE8011CDE90E305BDC392 /* DotNetParserFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45442561E29B698816D3B40546B8FFBF /* DotNetParserFormatter.swift */; };
+		3584465BE611F4094F04769872103407 /* lang_kl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8CCD60E45F022935C3F8670A1CA203 /* lang_kl.swift */; };
+		35ACC0B20A9162BA575A0604FA4FFB6F /* lang_hr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8328A71BC832BD720BD4A696BAB4B2C3 /* lang_hr.swift */; };
+		36057F83E755D4EA4A62D8D9C8F0B137 /* DateInRegion+Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F44FFF491823737B3A3E182DA83A9A /* DateInRegion+Components.swift */; };
+		3ADB0459A2F008A686BFAB72BDCBC0E0 /* lang_pl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4421A17A2C4F61C2D7BD1FC157BE2064 /* lang_pl.swift */; };
+		3B4D5F77A43595DC2745D591A40325FC /* lang_wae.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CE60A591E8DD61A01C80D33B125457 /* lang_wae.swift */; };
+		3D82E00A90DCB59D916E84E145A2964D /* lang_zu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8129D569B574DF20D87208E723732041 /* lang_zu.swift */; };
+		4196E48FFE96C2EC8CFDB6EB735E2B79 /* lang_ar_AE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB5E641F3CF177225496E314EEE7A06 /* lang_ar_AE.swift */; };
+		4224624EEE887F7FC0F5F9DA23757D5C /* lang_kea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3161DC8C7B98105854C7BBF50E8B22FC /* lang_kea.swift */; };
+		435EB8C688251CE0BF622614C07AC588 /* Locales.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672564521670EA5D696136E76AB752A2 /* Locales.swift */; };
+		44254EDA6CA7372EEEFA251AA24287A5 /* lang_se_FI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18B7A0D9370E46CEFAE4B11C77161E0 /* lang_se_FI.swift */; };
+		4659E118C6E8C558842C2B10FA3F5652 /* lang_ms.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BDB26AA6976ACBAD6FF65BA1F0D4C3 /* lang_ms.swift */; };
+		49132586C23CC7631A141447CF48E397 /* lang_nb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA75018D14621EEE5808D32A635DCF9 /* lang_nb.swift */; };
+		49394BB915941D51BD3B5B42D0E9C75B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		4A0E1FDAE73BC3BDFE8FBF892949B527 /* lang_bg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C9DDFB06B9064D8CCD4EEAB423849E /* lang_bg.swift */; };
+		4B7ECAD42D2E0C3614AF85D12A8F9C43 /* Pods-calendar2UITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E196DBE8C6D453ED2C49DB49B8617F /* Pods-calendar2UITests-dummy.m */; };
+		4C2D22CDCFFAD031BECDC0F93CA4B34E /* lang_be.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBFF1B6D59BC4026C0B72788415E969 /* lang_be.swift */; };
+		4F0DA51C6DEF5D837E39828E8FA0E160 /* lang_gl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C99F9FB5C658E03F267C59ED5F3982 /* lang_gl.swift */; };
+		4FAD863D39C3CB851921669101CF32E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		545F4CE82A04197EA162250D8C3C8561 /* lang_ky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2224664A1EC851F61DBB411A79FCF159 /* lang_ky.swift */; };
+		54E4D5401521675139086FB02C4958B1 /* lang_es_US.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0686E2393803C1249777B7D0707652CC /* lang_es_US.swift */; };
+		554B077EA8FF7E7CC771F4541011D6C2 /* lang_bsCyrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB278B7BACD82A37A4471D871913DAB /* lang_bsCyrl.swift */; };
+		567E88F5A30442EB14B8F0EA7DCAFE36 /* lang_de.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E21309208B48C6EE488A9E8DBEE68A7 /* lang_de.swift */; };
+		59D2E01C5C229CA54BE5DCE9C4881AF0 /* JBDatePickerSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EF7D930B805CAEC4DDF1D4FD7AFCE7 /* JBDatePickerSelectionView.swift */; };
+		59E9F4FB090341CB041D2B6595FC903D /* DateInRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2707FE0B3C08411B56989D914C1B4C0 /* DateInRegion.swift */; };
+		5BD35F867B14CDC698F4FCA31CB729BD /* lang_pa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C042C50BCBA221D0AE12ADFB9D031B /* lang_pa.swift */; };
+		5CD8124149A8C324A26164A540F4603A /* lang_ga.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19A8FFABB8D604208CEA97804BC3C04 /* lang_ga.swift */; };
+		5F8DDBE43C0257627268B4360FE4D038 /* Calendars.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51CC93636D2B3C0BD608BB5FA988A3 /* Calendars.swift */; };
+		606DD8817F0F36780A5D11066F23AF87 /* lang_mk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5D52807A3B05ACCBCFD2BE727EA30B /* lang_mk.swift */; };
+		61DA3645CB854B5D3E1F87476080D9EB /* lang_zh_Hans_MO.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF05AC5907CCD5FA4B81FDB8EAAD104 /* lang_zh_Hans_MO.swift */; };
+		6283739041EC2669DE8A07B519F1713C /* lang_ps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784F0DCF5C729C7458A3EC50CAD305D2 /* lang_ps.swift */; };
+		651F699CAAE4166670A936E86EB50C79 /* lang_am.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C20C4EB8B55EE6F714F39FDF68E155 /* lang_am.swift */; };
+		65856EA6DDDF5505DA29E01A69D2C859 /* lang_ca.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AC302C3355B7A627678506BBDA5EE8 /* lang_ca.swift */; };
+		678D6823FC675DEDF00C5B9ACEFFC6BA /* AssociatedValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB3E305CFF89D78E035F1F958D7EB5A /* AssociatedValues.swift */; };
+		68F506EE1F435874A8DF5695D895D331 /* lang_ka.swift in Sources */ = {isa = PBXBuildFile; fileRef = B592626122B76897C6A6E5390EC416D2 /* lang_ka.swift */; };
+		6A5B9E8D0E13E4F65822D398801DA9AA /* Zones.swift in Sources */ = {isa = PBXBuildFile; fileRef = D927C08E2551F9EA60C64B59E7C86C95 /* Zones.swift */; };
+		6D0BE8C2216F72F093B91B2B6FEAD400 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		6D5C212D1EA7BFF41BFC1C9C85411F26 /* RelativeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CADC6FD7A0016C5FE56856234FB4E4 /* RelativeFormatter.swift */; };
+		6E77B63DE989EED59A7AB72F6BCECC37 /* lang_uk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAF09ABC406C98A87F696B3CB2349AC /* lang_uk.swift */; };
+		6F2CBF664DC531DC30E571690C5C0753 /* TimePeriodProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01477BF9C4A1A8E974F7087C5DCF4CC /* TimePeriodProtocol.swift */; };
+		6FC02036E250091244CDD437AC310049 /* TimePeriod+Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E4B2F2DAEA322427C93395EBAA271F /* TimePeriod+Support.swift */; };
+		70F3DC962BEB07D7BB2EF186BE712831 /* lang_sr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FFD9FBAE6494A6AD7A49F98FDEFCBD /* lang_sr.swift */; };
+		71011C9C5D422DB07D9BEEF2422227B0 /* JBDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEF8EE9E9769E41ADEA039D24B72138 /* JBDateExtension.swift */; };
+		7280F88B5FBE89B1FE6BA7B037EA829C /* lang_dsb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028C4871534EF68725519502F88D32B0 /* lang_dsb.swift */; };
+		7475883787C28400870536650B4AE6D9 /* lang_th.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD10E5D6CC428B57AC952D518533D9F /* lang_th.swift */; };
+		74A3B1AD795DDAF23915B8891CA4DB79 /* Commons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA10DB9EEF66A500C0E6D5FC569B21 /* Commons.swift */; };
+		74AD0BA97B63D9C8202E6934A00D9D5D /* lang_gu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D423FA726A8C8CC77F2FDB047AE3D18 /* lang_gu.swift */; };
+		754738B9CDFF7BFA82F5D41B17F6F52C /* lang_it.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08675B715572D75C7FE3A1B90959780D /* lang_it.swift */; };
+		76E985484A2FB7AE07CE194DC44622FB /* lang_ko.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71241F2653CB8CD8A9D602DBB7E6BEC8 /* lang_ko.swift */; };
+		796064B48088128A35FCBB22EE69005E /* lang_br.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE207927EC0A35F0611FD8BF6EDAE8D /* lang_br.swift */; };
+		7B5123BA7FCE5AD6C84F75C55C3FA918 /* lang_es_PY.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EBC61161F59DC92AF35BA4BC98EB4B /* lang_es_PY.swift */; };
+		7B5CD7EE3CDC8C7B47F216EBF3DFA1AB /* RelativeFormatter+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F548F1F11838C07A0053DDC1A0D7364 /* RelativeFormatter+Style.swift */; };
+		7B6A080D83C8EDB21F626D0608F73664 /* SwiftDate-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 96AE8738511139FA2B985C19B6AE41AF /* SwiftDate-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B888C94C84E1B31871D9750AB4FADF0 /* lang_ur.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78E5DEF1BD12661589636D6A088094 /* lang_ur.swift */; };
+		7FC9B6B07A1F3EE428682ED3B17F84CF /* lang_ar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D351471406DC39E8A8E0921A1F3F04 /* lang_ar.swift */; };
+		81DC358FD4AA7FC0EBEEC3C66F519A54 /* lang_yi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94137205D1BBA18BF6BF715E817C4C8F /* lang_yi.swift */; };
+		84B4DDEEC84EE3D7508A0544854A3865 /* lang_as.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A95436D9053DE55B7896D83AE3D3699 /* lang_as.swift */; };
+		84E889F699A232F5333A80E1F45EC801 /* lang_sk.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99633ED22C967DBA516152DB03257E3 /* lang_sk.swift */; };
+		85670356ABF10D5B5E447DDC5558BE0E /* DateComponents+Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6B891AC84E7915E8582A2D59D8AF78 /* DateComponents+Extras.swift */; };
+		87B751BCAFDE5231CC54E94ACFC77C8A /* lang_gd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936AEED45812D55274C937541807CC3C /* lang_gd.swift */; };
+		87B8568FEBB5A1E0418CAE6FF7D4E040 /* Pods-calendar2-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D95514063D129AE83918BCB90239E833 /* Pods-calendar2-dummy.m */; };
+		87C198AFE746E76173C9974A7CBF809B /* lang_ug.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49C21DF0AFED2A22CEA81FF4269DD00 /* lang_ug.swift */; };
+		88947D926A5444D46EAA8CDBC734DDBC /* lang_sw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332F794F26DBBC34884DE60099BEC463 /* lang_sw.swift */; };
+		899FB5C8A56B95B7F0449163952FED89 /* lang_cs.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6722F274B3E0E77F9FA04630466F05 /* lang_cs.swift */; };
+		8ABA9BF2B234280F1285BB11D5DFC471 /* lang_lt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF557AED38686C87B0952D134AA050 /* lang_lt.swift */; };
+		8AEEFBF0A76031F98DCE901EBFC74EE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		8BAD5089F40894E397E0E2AE26BBDBAD /* lang_yue_Hans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B11094C050851CEC09418CB8E98B26 /* lang_yue_Hans.swift */; };
+		8BE77B920E69DA4F60C1DC5389DEE2D3 /* SwiftDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D1BE5EA103130282063E8844905BB /* SwiftDate.swift */; };
+		8E3AD3F90B2FFD68671D47FDBFE4428A /* lang_nn.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD4621B338E20070EE071BA51EC3C97 /* lang_nn.swift */; };
+		92362B2B3C8C0FD993583A9DB5DC5089 /* lang_lv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649581911E9E04D4222F94C71AFFF23C /* lang_lv.swift */; };
+		931650C398800906B43C1CB7808AD819 /* lang_zh_Hans_SG.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64A4C24A15969D4976E969AD1E5C0FB /* lang_zh_Hans_SG.swift */; };
+		94229AF38477B1C3C3C1D20285CF6983 /* lang_nl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7599ABB41ABEEEEBA8283CD050CFA45F /* lang_nl.swift */; };
+		94768B953DD9299EC76A4AB0A6FBFC57 /* lang_or.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3DD28A98FF2B6BED21FA2DEBD7500F /* lang_or.swift */; };
+		956E46F58E242E7E893EAB5A4DAE376B /* Date+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDBBDBB5BA1ACB6360CE29276667336 /* Date+Create.swift */; };
+		99BF2750CA8F8156E32663BBB453F4D8 /* lang_uz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779089DC5A50D23AFD91BC31F2DEE667 /* lang_uz.swift */; };
+		9A375A44BE228EAF8FD8D26D87C3035C /* String+Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D203BFD563050653E6861AED354D2FC5 /* String+Parser.swift */; };
+		9C2FA128E182061C6A7C4AF85514E05E /* lang_sah.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F509BBB0FD5D90D9B4331C3199101F /* lang_sah.swift */; };
+		9C8AAB91EC963CA9E5300A4B6DB97B0B /* lang_ja.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB705D07E9E6E99E3EB985D785CB5E42 /* lang_ja.swift */; };
+		A686E1EB6469A5E343DB6C888D86B9CD /* SwiftDate-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F8BAC51690E50D3F12571602928D87 /* SwiftDate-dummy.m */; };
+		A77E0602E85957B4BEDF28F32B86284B /* Pods-calendar2-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ED92DB2005372709D6B707C79380DA14 /* Pods-calendar2-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A90181B394044BFDF7F5521DBFC96F2B /* DateInRegion+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9C518FA1111222D1E462D4AEEDC7B /* DateInRegion+Create.swift */; };
+		ACBAA34E321323615E4999A139540C07 /* Pods-calendar2UITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C7E6FB549C461A7DCE4E1709507F8859 /* Pods-calendar2UITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD4F2483D406378D6C2D6F4302F39B6F /* JBDatePickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4952EEE5B9B6F0AF47B9525EB0AE00D3 /* JBDatePickerManager.swift */; };
+		AE9F07D842ACDBE41D5DF1ED0B8D2D95 /* lang_ta.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59EB40ED4AD84CD27F53D5CF6B1F6B6 /* lang_ta.swift */; };
+		AFB7EEAAD67B677CB8F275BE44BFBD17 /* lang_et.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699FA764CCC194C89B1A07AD96C60FC9 /* lang_et.swift */; };
+		B146264E2E3943379C9321B12A8BB0DA /* lang_fo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF8046E0D7419F378331C5471AB33EE /* lang_fo.swift */; };
+		B2092ABED309E90F6B8F09550EF3876D /* lang_es_MX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932737572C8D3B48647C1F28B167FDA3 /* lang_es_MX.swift */; };
+		B3B9514B47DA071A97C30BE3EFE8701D /* lang_ne.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFCF69915511887F81EB282CBDF4E9A /* lang_ne.swift */; };
+		B403F225EDB697CBFBE7205364E05183 /* lang_fy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A122EAC802DE3B0C3AA5ABD5F8C60AD /* lang_fy.swift */; };
+		B4FD649F0D1EF46A6761D90880903459 /* lang_sv.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BCE536602E4C9F6A10676E64E59981 /* lang_sv.swift */; };
+		BA14F3913EF40ADF6624284EAE9A1902 /* lang_uz_Cyrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FF869A0D336CA777B321417C43FA2C /* lang_uz_Cyrl.swift */; };
+		BA535E98E5969F0E6950A9D7962580FC /* lang_he.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ABFC2837FB529496BCAAF144320CC6 /* lang_he.swift */; };
+		BA9C23E618735DBCE816BBF475A440EF /* lang_lo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E25A3401B13685EE0781C75490ED03 /* lang_lo.swift */; };
+		BC67F282C9981EE3DB02E66074DD2173 /* lang_zh.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70C0EA085CFE9D1B8D2D9B925ACA113 /* lang_zh.swift */; };
+		BCAC05B0F670D0ECE1CE54046FF8BC73 /* lang_es_AR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B59F1DF9D6FE263955E20FC9346A428 /* lang_es_AR.swift */; };
+		C0BB95113E22F1359297BB9F18A49F31 /* lang_vi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6232D8E0B075C2EEB500B69028772 /* lang_vi.swift */; };
+		C115C18F4BCD989D4D2098103D3156CD /* lang_fi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77AC78393D033309F0D2F9479CD68CF /* lang_fi.swift */; };
+		C1DC19AC2A03B2DDE7A4FD93F1B942D8 /* ISOParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4775907D36E596663DAB7B3EAA7698F6 /* ISOParser.swift */; };
+		C2739A1918391CB2BDEB1DBB0494CB99 /* lang_km.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA823BFEE89F428DC7877094A44AC9A /* lang_km.swift */; };
+		C37A3A9842FC6D80BE5DB9F3B4061D85 /* JBDatePickerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844FAFEAA27B6389DB103B5662AE2799 /* JBDatePickerViewDelegate.swift */; };
+		C55DF127B393A1A32A9EBD573B8D3AF7 /* lang_jgo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8459EA696868286A943A7206CDC36703 /* lang_jgo.swift */; };
+		C5DAD023143CC3980281C00083E0341F /* lang_mn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5892EAB284364DAC61B697F12C510B7D /* lang_mn.swift */; };
+		C6F366FDDD4032D183909668637E2D56 /* lang_fr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254EB090491581C50BCC31E6EDE272ED /* lang_fr.swift */; };
+		C866ECA4B3F159C8F657E98F80142830 /* lang_is.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786F94DA946A1D8B6F3050139E8F3D50 /* lang_is.swift */; };
+		C8E140FBD19DE7EC73A0851E7974CF7B /* lang_bs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BD7CA7013EA653FA87C50D2D220E70 /* lang_bs.swift */; };
+		CA5BF51A1D16F6F3072E1A929CC57BF3 /* lang_ml.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D53EE7FEB74F7A3E0F590FCADDA102 /* lang_ml.swift */; };
+		CAC9B1223A64B52C5537D98562FA5EFA /* DateInRegion+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3D07386BFDF8EC7CE405C5B88BDA1E /* DateInRegion+Math.swift */; };
+		CBCFB78B5D88A0F564D9CF2659D4879F /* lang_kok.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2639B535CA30C95335E1A642DC5DF4D9 /* lang_kok.swift */; };
+		CBDCF44E81AEE5D062EA93B332DBDE09 /* lang_tr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595F728E8503CBB554B0B6EE011BB7C6 /* lang_tr.swift */; };
+		CDC1B10687FCC1A8048DD1550616B0B2 /* JBDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA391AD116945B21B06F55B3C58EE0F /* JBDate.swift */; };
+		CE9433C3CF2CF1237CB0667B41200793 /* lang_ee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DB79ADFE2AAB0AEFDB6DBE10C1DB8A /* lang_ee.swift */; };
+		D08DFDB2DA1803DCA08C0080EBEC793E /* lang_hu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA371B187D09E2FD82E0F19FA934B57 /* lang_hu.swift */; };
+		D219452D6DAFAA5786F939C07DAC1B0F /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6422C759AF864369D31383858536D075 /* Date.swift */; };
+		D28385BE27460125EED4B698B2483E0F /* Date+Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1905CC7D270C358250011401499D76F /* Date+Components.swift */; };
+		D2E9E9FDF168E4D6A3AE682456109B3B /* lang_bn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C17F02E5EE9CE22D3D34D73B3EDCC59 /* lang_bn.swift */; };
+		D6F46FD4A3E7EB78A3BBDBC0C904AD54 /* lang_ti.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA946B077D2AB8F72219B7737446554 /* lang_ti.swift */; };
+		D98E80F7497D4F49E3DE1EBA4065A250 /* Int+DateComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = F021B2226ADD986E36811316B0469EB0 /* Int+DateComponents.swift */; };
+		DAD59955B713A4BEF91CEC1AC18F03B8 /* lang_mr.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCFA41B71735BCB53E5605B084B2285 /* lang_mr.swift */; };
+		DB1AFD2DA4A274361F9FA6E3F662029E /* JBDatePicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 52538D295DE7672B2DEF7C86F49DFC6A /* JBDatePicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE35166E822495100128ABBA4090FA61 /* lang_mt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A7C6048313C8CF096968BE02B4E26D /* lang_mt.swift */; };
+		DEE48969F03423C48F5F6B6A12FDE7F5 /* TimeInterval+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52EF778645A410D9A100670BAE59557 /* TimeInterval+Formatter.swift */; };
+		E03228C07BBC8952BE96688A648050A7 /* Formatter+Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BD82EADC69801DE20D1587FFD75FF8 /* Formatter+Protocols.swift */; };
+		E111DB5ABE26B78A2901AD03D54DEF1F /* lang_zh_Hant_HK.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA0FE97BF63831C9A3FE53DD3F5C5F6 /* lang_zh_Hant_HK.swift */; };
+		E612C05069702FD8BFF9B2BF7E6463C0 /* Pods-calendar2Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F2093DD5F19BB28F6C07954757689FE /* Pods-calendar2Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E616C24262923145B78B822EF0AF1CCF /* lang_si.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E44653F442032B5BB8820589C5BC28 /* lang_si.swift */; };
+		E77D7DD39824DA82B68707E5756FC214 /* lang_yue_Hant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B2763F5951ED5247806552D9B082DE /* lang_yue_Hant.swift */; };
+		E78432B4F544D0AFDD6512C2E9295010 /* lang_pt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199D3A30B0A24ED08CA021926A7195E5 /* lang_pt.swift */; };
+		E7AC8FDDC04FC875BEC3E1E6F9DB49A7 /* lang_da.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8C5762EA22F93F87EAAEDED3415F19 /* lang_da.swift */; };
+		E949DB7A7F4492DC52A41362AA0F1F62 /* lang_mzn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6078B2D51703B29682A0E634E40EE624 /* lang_mzn.swift */; };
+		EA0C86886328721B82E3DEFB4BB24324 /* TimePeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2983BFF1577AED6EA62F83B6CD24C0 /* TimePeriod.swift */; };
+		EA5FF0FA2C681C21454E281450EFD8DF /* lang_zh_Hans_HK.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC8E1BDB3F511F0106D02042CA95435 /* lang_zh_Hans_HK.swift */; };
+		EB6AD8D07B75F5EDD24EE69E387841E8 /* ISOFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A8231659A448A6E1DA9E1202288314 /* ISOFormatter.swift */; };
+		F1B1ED7B6A820856D76A875B6734AAC0 /* JBDatePickerContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39193E1C380C997E5AAB093D9FF9C11C /* JBDatePickerContentVC.swift */; };
+		F45DEEFC9E4A189F10ACF96569D3DE71 /* lang_sl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B80EEF7C93A496BB43DF6CF23D47DD /* lang_sl.swift */; };
+		F66EE9DE9D80E702E3DB80F076F416FD /* lang_af.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622F940F7E4B4CEE80F351B061A0E7D1 /* lang_af.swift */; };
+		F7D7D5BBC19BE16086BEF55258055EE6 /* lang_tk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E69A3F728E1D3C42614E130C9D5C67 /* lang_tk.swift */; };
+		F7F7DB2F3097A426E98026779B5371FB /* lang_cy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB7F9603D9256B69A70AFCAA1F2D323 /* lang_cy.swift */; };
+		F8933906360A56576C68E586494C85CD /* lang_ur_IN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CD828F6029C1E9E4E283925485BEA6 /* lang_ur_IN.swift */; };
+		F9EB5603BA22EB5E572F859BCAB92045 /* JBDatePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6C16E361A54E5B77AD1CF94C3DF0A6 /* JBDatePicker-dummy.m */; };
+		F9F60E54082685C75223F08A6D78E6E3 /* JBDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70795A275996A0AFCB989116403E2A8F /* JBDatePickerView.swift */; };
+		FAAA2B9029AB4916752A729905EF4C42 /* JBDatePickerMonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FFDBC3C9368953A50E973E7F745175 /* JBDatePickerMonthView.swift */; };
+		FDF945EE1E3522ADB233F6CAF64B2391 /* lang_eu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0AC7EB0B5D63580C7FD6A5473D474D /* lang_eu.swift */; };
+		FF80CE3B39ED76D894E1F1C1EE6B38D5 /* lang_lb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7976772688F28BA0459EB51BB928ADB3 /* lang_lb.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		14103AC2A289C0ACF9103A8D8A9A28AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A78545F11A83C5AA8CFEE8407FDB8D2;
+			remoteInfo = "Pods-calendar2";
+		};
+		1AAC06442211A06AFD8915490A48F88C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D72DB44A5D594EEE46407AD30CBCF808;
+			remoteInfo = SwiftDate;
+		};
+		657662D80DC28D4E6261637EE5B1E8B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A01A78E1415B1103149D782482AE955F;
+			remoteInfo = JBDatePicker;
+		};
+		C3F83B5E60007CB7C124994898081441 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A78545F11A83C5AA8CFEE8407FDB8D2;
+			remoteInfo = "Pods-calendar2";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		028C4871534EF68725519502F88D32B0 /* lang_dsb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_dsb.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_dsb.swift; sourceTree = "<group>"; };
+		03556D4251CA515467F0190D2B47DCC0 /* Pods-calendar2Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-calendar2Tests-dummy.m"; sourceTree = "<group>"; };
+		05EA10DB9EEF66A500C0E6D5FC569B21 /* Commons.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Commons.swift; path = Sources/SwiftDate/Supports/Commons.swift; sourceTree = "<group>"; };
+		0686E2393803C1249777B7D0707652CC /* lang_es_US.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_es_US.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_es_US.swift; sourceTree = "<group>"; };
+		07FFD9FBAE6494A6AD7A49F98FDEFCBD /* lang_sr.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_sr.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_sr.swift; sourceTree = "<group>"; };
+		08675B715572D75C7FE3A1B90959780D /* lang_it.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_it.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_it.swift; sourceTree = "<group>"; };
+		0945F61BBBF7A0EA2071DE2EA7172109 /* lang_to.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_to.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_to.swift; sourceTree = "<group>"; };
+		0AA823BFEE89F428DC7877094A44AC9A /* lang_km.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_km.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_km.swift; sourceTree = "<group>"; };
+		0BA371B187D09E2FD82E0F19FA934B57 /* lang_hu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_hu.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_hu.swift; sourceTree = "<group>"; };
+		0BDBBDBB5BA1ACB6360CE29276667336 /* Date+Create.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+Create.swift"; path = "Sources/SwiftDate/Date/Date+Create.swift"; sourceTree = "<group>"; };
+		0DEF8EE9E9769E41ADEA039D24B72138 /* JBDateExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JBDateExtension.swift; path = JBDatePicker/Classes/JBDateExtension.swift; sourceTree = "<group>"; };
+		0E2BDB276B51DF73C5B4DF2810AAE4A5 /* lang_fa.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_fa.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_fa.swift; sourceTree = "<group>"; };
+		0F5CF35A918D521888FE05C3F033B4F1 /* lang_id.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_id.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_id.swift; sourceTree = "<group>"; };
+		0F9648F9C76BD6884D5B0BECDFFEB900 /* Pods-calendar2UITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-calendar2UITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		10110C4F15ED535A125EB77A460F0D7B /* lang_se.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_se.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_se.swift; sourceTree = "<group>"; };
+		11FE2A3589316B4EF989085BFAE0B5EF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1260F2080D9FDC0C22CE043A21F104DF /* DateInRegion+Compare.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateInRegion+Compare.swift"; path = "Sources/SwiftDate/DateInRegion/DateInRegion+Compare.swift"; sourceTree = "<group>"; };
+		13635A087CAB9B9AC76B428C1C0D6EF6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15ABFC2837FB529496BCAAF144320CC6 /* lang_he.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_he.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_he.swift; sourceTree = "<group>"; };
+		16E196DBE8C6D453ED2C49DB49B8617F /* Pods-calendar2UITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-calendar2UITests-dummy.m"; sourceTree = "<group>"; };
+		1756A79A0C2F80FA7E85B18B25D0D7A2 /* Pods_calendar2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_calendar2Tests.framework; path = "Pods-calendar2Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17AC302C3355B7A627678506BBDA5EE8 /* lang_ca.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_ca.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_ca.swift; sourceTree = "<group>"; };
+		199D3A30B0A24ED08CA021926A7195E5 /* lang_pt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_pt.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_pt.swift; sourceTree = "<group>"; };
+		1AA946B077D2AB8F72219B7737446554 /* lang_ti.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_ti.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_ti.swift; sourceTree = "<group>"; };
+		1B0778CC000FA2173E10B424E95A13E2 /* Pods-calendar2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-calendar2Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		1B569B6FFBF77EB7F7CE32CED2AFB072 /* Pods-calendar2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-calendar2Tests.release.xcconfig"; sourceTree = "<group>"; };
+		1C17F02E5EE9CE22D3D34D73B3EDCC59 /* lang_bn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_bn.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_bn.swift; sourceTree = "<group>"; };
+		1DA1540F79C2FDFC4BCC76229D4BCAFE /* lang_ksh.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_ksh.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_ksh.swift; sourceTree = "<group>"; };
+		1EDB1A0E892D7C50EC52C6D63872EE0A /* Pods-calendar2-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-calendar2-acknowledgements.plist"; sourceTree = "<group>"; };
+		1FB7F9603D9256B69A70AFCAA1F2D323 /* lang_cy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_cy.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_cy.swift; sourceTree = "<group>"; };
+		215DA23C591E0D2C2AE61461A7C88FA3 /* lang_el.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_el.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_el.swift; sourceTree = "<group>"; };
+		2224664A1EC851F61DBB411A79FCF159 /* lang_ky.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_ky.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_ky.swift; sourceTree = "<group>"; };
+		245D1BE5EA103130282063E8844905BB /* SwiftDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftDate.swift; path = Sources/SwiftDate.swift; sourceTree = "<group>"; };
+		250BB7F8AF58F22732D78148D346A10B /* Pods-calendar2UITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-calendar2UITests.modulemap"; sourceTree = "<group>"; };
+		254EB090491581C50BCC31E6EDE272ED /* lang_fr.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_fr.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_fr.swift; sourceTree = "<group>"; };
+		25B11094C050851CEC09418CB8E98B26 /* lang_yue_Hans.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_yue_Hans.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_yue_Hans.swift; sourceTree = "<group>"; };
+		2639B535CA30C95335E1A642DC5DF4D9 /* lang_kok.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_kok.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_kok.swift; sourceTree = "<group>"; };
+		26B2763F5951ED5247806552D9B082DE /* lang_yue_Hant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_yue_Hant.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_yue_Hant.swift; sourceTree = "<group>"; };
+		2881777A1BD13C15FBACA65A565402FB /* SwiftDate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftDate.framework; path = SwiftDate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28F44FFF491823737B3A3E182DA83A9A /* DateInRegion+Components.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateInRegion+Components.swift"; path = "Sources/SwiftDate/DateInRegion/DateInRegion+Components.swift"; sourceTree = "<group>"; };
+		2B3DD28A98FF2B6BED21FA2DEBD7500F /* lang_or.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_or.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_or.swift; sourceTree = "<group>"; };
+		2DB278B7BACD82A37A4471D871913DAB /* lang_bsCyrl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_bsCyrl.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_bsCyrl.swift; sourceTree = "<group>"; };
+		30D13B1DA3B7DCDE3E99623F136DFA62 /* lang_fr_CA.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_fr_CA.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_fr_CA.swift; sourceTree = "<group>"; };
+		30D9385DCC410747E76C83D9092616FF /* lang_es.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_es.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_es.swift; sourceTree = "<group>"; };
+		3161DC8C7B98105854C7BBF50E8B22FC /* lang_kea.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_kea.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_kea.swift; sourceTree = "<group>"; };
+		31C5FFEB5D2133658A605E04595CBD60 /* lang_hi.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_hi.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_hi.swift; sourceTree = "<group>"; };
+		32BD82EADC69801DE20D1587FFD75FF8 /* Formatter+Protocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Formatter+Protocols.swift"; path = "Sources/SwiftDate/Formatters/Formatter+Protocols.swift"; sourceTree = "<group>"; };
+		332F794F26DBBC34884DE60099BEC463 /* lang_sw.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_sw.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_sw.swift; sourceTree = "<group>"; };
+		349CE3B6B3F85D5E18D9EE3B2967EED3 /* Pods-calendar2-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-calendar2-resources.sh"; sourceTree = "<group>"; };
+		34EF7D930B805CAEC4DDF1D4FD7AFCE7 /* JBDatePickerSelectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JBDatePickerSelectionView.swift; path = JBDatePicker/Classes/JBDatePickerSelectionView.swift; sourceTree = "<group>"; };
+		39193E1C380C997E5AAB093D9FF9C11C /* JBDatePickerContentVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JBDatePickerContentVC.swift; path = JBDatePicker/Classes/JBDatePickerContentVC.swift; sourceTree = "<group>"; };
+		3A122EAC802DE3B0C3AA5ABD5F8C60AD /* lang_fy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_fy.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_fy.swift; sourceTree = "<group>"; };
+		3C8C5762EA22F93F87EAAEDED3415F19 /* lang_da.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_da.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_da.swift; sourceTree = "<group>"; };
+		4217280BB7491F145E08F4B8B9411D24 /* lang_lkt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_lkt.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_lkt.swift; sourceTree = "<group>"; };
+		4421A17A2C4F61C2D7BD1FC157BE2064 /* lang_pl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_pl.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_pl.swift; sourceTree = "<group>"; };
+		44FF869A0D336CA777B321417C43FA2C /* lang_uz_Cyrl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_uz_Cyrl.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_uz_Cyrl.swift; sourceTree = "<group>"; };
+		45442561E29B698816D3B40546B8FFBF /* DotNetParserFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DotNetParserFormatter.swift; path = Sources/SwiftDate/Formatters/DotNetParserFormatter.swift; sourceTree = "<group>"; };
+		4569628E54C05BB5D91F3485D09AC739 /* Pods-calendar2Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-calendar2Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		45872A0B6A3838BA4AEB8B29E5BD8EFA /* lang_en.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_en.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_en.swift; sourceTree = "<group>"; };
+		465F311317F69E8673A349D8394D3D89 /* DateRepresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateRepresentable.swift; path = Sources/DateRepresentable.swift; sourceTree = "<group>"; };
+		4754E237BADD0D8CA47A10106114ED80 /* JBDatePicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JBDatePicker.modulemap; sourceTree = "<group>"; };
+		4775907D36E596663DAB7B3EAA7698F6 /* ISOParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ISOParser.swift; path = Sources/SwiftDate/Formatters/ISOParser.swift; sourceTree = "<group>"; };
+		4952EEE5B9B6F0AF47B9525EB0AE00D3 /* JBDatePickerManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JBDatePickerManager.swift; path = JBDatePicker/Classes/JBDatePickerManager.swift; sourceTree = "<group>"; };
+		4A6B7735AE8D04B89C5E44B15C720F2A /* Pods-calendar2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-calendar2UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4F2093DD5F19BB28F6C07954757689FE /* Pods-calendar2Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-calendar2Tests-umbrella.h"; sourceTree = "<group>"; };
+		5034344484BD0169BA7D4BF66D1699F9 /* Pods-calendar2-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-calendar2-frameworks.sh"; sourceTree = "<group>"; };
+		50CE60A591E8DD61A01C80D33B125457 /* lang_wae.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_wae.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_wae.swift; sourceTree = "<group>"; };
+		50F9C518FA1111222D1E462D4AEEDC7B /* DateInRegion+Create.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateInRegion+Create.swift"; path = "Sources/SwiftDate/DateInRegion/DateInRegion+Create.swift"; sourceTree = "<group>"; };
+		52538D295DE7672B2DEF7C86F49DFC6A /* JBDatePicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JBDatePicker-umbrella.h"; sourceTree = "<group>"; };
+		537A1F32774DACA06053DA90D391063E /* TimePeriodCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimePeriodCollection.swift; path = Sources/SwiftDate/TimePeriod/Groups/TimePeriodCollection.swift; sourceTree = "<group>"; };
+		53CD828F6029C1E9E4E283925485BEA6 /* lang_ur_IN.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_ur_IN.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_ur_IN.swift; sourceTree = "<group>"; };
+		56C99F9FB5C658E03F267C59ED5F3982 /* lang_gl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_gl.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_gl.swift; sourceTree = "<group>"; };
+		56EBC61161F59DC92AF35BA4BC98EB4B /* lang_es_PY.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_es_PY.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_es_PY.swift; sourceTree = "<group>"; };
+		5892EAB284364DAC61B697F12C510B7D /* lang_mn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_mn.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_mn.swift; sourceTree = "<group>"; };
+		58F8BAC51690E50D3F12571602928D87 /* SwiftDate-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftDate-dummy.m"; sourceTree = "<group>"; };
+		595F728E8503CBB554B0B6EE011BB7C6 /* lang_tr.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_tr.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_tr.swift; sourceTree = "<group>"; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5A329C43EE1CBBA177027CBBC994F56A /* lang_sr_Latn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_sr_Latn.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_sr_Latn.swift; sourceTree = "<group>"; };
+		5AB5E641F3CF177225496E314EEE7A06 /* lang_ar_AE.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_ar_AE.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_ar_AE.swift; sourceTree = "<group>"; };
+		5C1FB919F700F324104DA695E7EE54D5 /* Pods_calendar2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_calendar2.framework; path = "Pods-calendar2.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D423FA726A8C8CC77F2FDB047AE3D18 /* lang_gu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_gu.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_gu.swift; sourceTree = "<group>"; };
+		6078B2D51703B29682A0E634E40EE624 /* lang_mzn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_mzn.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_mzn.swift; sourceTree = "<group>"; };
+		60C9DDFB06B9064D8CCD4EEAB423849E /* lang_bg.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_bg.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_bg.swift; sourceTree = "<group>"; };
+		622F940F7E4B4CEE80F351B061A0E7D1 /* lang_af.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_af.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_af.swift; sourceTree = "<group>"; };
+		62A5DE11370553A2D75B3B3648D4D4E3 /* lang_kn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_kn.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_kn.swift; sourceTree = "<group>"; };
+		6422C759AF864369D31383858536D075 /* Date.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Date.swift; path = Sources/SwiftDate/Date/Date.swift; sourceTree = "<group>"; };
+		649581911E9E04D4222F94C71AFFF23C /* lang_lv.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_lv.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_lv.swift; sourceTree = "<group>"; };
+		672564521670EA5D696136E76AB752A2 /* Locales.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Locales.swift; path = Sources/SwiftDate/Supports/Locales.swift; sourceTree = "<group>"; };
+		67E69A3F728E1D3C42614E130C9D5C67 /* lang_tk.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_tk.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_tk.swift; sourceTree = "<group>"; };
+		699FA764CCC194C89B1A07AD96C60FC9 /* lang_et.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_et.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_et.swift; sourceTree = "<group>"; };
+		6BA75018D14621EEE5808D32A635DCF9 /* lang_nb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_nb.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_nb.swift; sourceTree = "<group>"; };
+		6D0AC7EB0B5D63580C7FD6A5473D474D /* lang_eu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_eu.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_eu.swift; sourceTree = "<group>"; };
+		6D3D07386BFDF8EC7CE405C5B88BDA1E /* DateInRegion+Math.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateInRegion+Math.swift"; path = "Sources/SwiftDate/DateInRegion/DateInRegion+Math.swift"; sourceTree = "<group>"; };
+		6DAF09ABC406C98A87F696B3CB2349AC /* lang_uk.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_uk.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_uk.swift; sourceTree = "<group>"; };
+		6E5E8D27B474176CC8E43D3D856E6B1E /* Pods-calendar2UITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-calendar2UITests-resources.sh"; sourceTree = "<group>"; };
+		6F548F1F11838C07A0053DDC1A0D7364 /* RelativeFormatter+Style.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "RelativeFormatter+Style.swift"; path = "Sources/SwiftDate/Formatters/RelativeFormatter/RelativeFormatter+Style.swift"; sourceTree = "<group>"; };
+		70795A275996A0AFCB989116403E2A8F /* JBDatePickerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JBDatePickerView.swift; path = JBDatePicker/Classes/JBDatePickerView.swift; sourceTree = "<group>"; };
+		70B80EEF7C93A496BB43DF6CF23D47DD /* lang_sl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_sl.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_sl.swift; sourceTree = "<group>"; };
+		71241F2653CB8CD8A9D602DBB7E6BEC8 /* lang_ko.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_ko.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_ko.swift; sourceTree = "<group>"; };
+		74C042C50BCBA221D0AE12ADFB9D031B /* lang_pa.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_pa.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_pa.swift; sourceTree = "<group>"; };
+		7599ABB41ABEEEEBA8283CD050CFA45F /* lang_nl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_nl.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_nl.swift; sourceTree = "<group>"; };
+		779089DC5A50D23AFD91BC31F2DEE667 /* lang_uz.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_uz.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_uz.swift; sourceTree = "<group>"; };
+		784F0DCF5C729C7458A3EC50CAD305D2 /* lang_ps.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_ps.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_ps.swift; sourceTree = "<group>"; };
+		786F94DA946A1D8B6F3050139E8F3D50 /* lang_is.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_is.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_is.swift; sourceTree = "<group>"; };
+		7976772688F28BA0459EB51BB928ADB3 /* lang_lb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_lb.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_lb.swift; sourceTree = "<group>"; };
+		7C8B1320F2E20FBA309306CC8EFD5762 /* JBFont.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JBFont.swift; path = JBDatePicker/Classes/JBFont.swift; sourceTree = "<group>"; };
+		80C3B5D09548BE93C5887837B25CF025 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8129D569B574DF20D87208E723732041 /* lang_zu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_zu.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_zu.swift; sourceTree = "<group>"; };
+		82F2E36D8BA30B492A45472CD2007520 /* lang_ru.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_ru.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_ru.swift; sourceTree = "<group>"; };
+		8328A71BC832BD720BD4A696BAB4B2C3 /* lang_hr.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_hr.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_hr.swift; sourceTree = "<group>"; };
+		844FAFEAA27B6389DB103B5662AE2799 /* JBDatePickerViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JBDatePickerViewDelegate.swift; path = JBDatePicker/Classes/JBDatePickerViewDelegate.swift; sourceTree = "<group>"; };
+		8459EA696868286A943A7206CDC36703 /* lang_jgo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_jgo.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_jgo.swift; sourceTree = "<group>"; };
+		86162003939B06A21CBE301DE36CE14B /* JBDatePicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JBDatePicker.xcconfig; sourceTree = "<group>"; };
+		87807464500145415034A8D7A8F4872D /* Date+Math.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+Math.swift"; path = "Sources/SwiftDate/Date/Date+Math.swift"; sourceTree = "<group>"; };
+		884A7A57534C8689D002899F1BE8332F /* Pods-calendar2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-calendar2.release.xcconfig"; sourceTree = "<group>"; };
+		89EFBB599AEFD02E31BD067A0B967BB8 /* lang_hy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_hy.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_hy.swift; sourceTree = "<group>"; };
+		8A6536BFC9A395C658696BEEDCB9DA91 /* lang_az.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_az.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_az.swift; sourceTree = "<group>"; };
+		8A95436D9053DE55B7896D83AE3D3699 /* lang_as.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_as.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_as.swift; sourceTree = "<group>"; };
+		8A9ACDBB8F3F30DDF53849D6BF71AA4E /* lang_hsb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_hsb.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_hsb.swift; sourceTree = "<group>"; };
+		8DF8046E0D7419F378331C5471AB33EE /* lang_fo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_fo.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_fo.swift; sourceTree = "<group>"; };
+		8E21309208B48C6EE488A9E8DBEE68A7 /* lang_de.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_de.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_de.swift; sourceTree = "<group>"; };
+		8EA391AD116945B21B06F55B3C58EE0F /* JBDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JBDate.swift; path = JBDatePicker/Classes/JBDate.swift; sourceTree = "<group>"; };
+		92600E840F571807D87D53D38462B792 /* Pods-calendar2UITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-calendar2UITests-frameworks.sh"; sourceTree = "<group>"; };
+		932737572C8D3B48647C1F28B167FDA3 /* lang_es_MX.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_es_MX.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_es_MX.swift; sourceTree = "<group>"; };
+		936AEED45812D55274C937541807CC3C /* lang_gd.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_gd.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_gd.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93F1ACCD40583FF45A2D2D3310A3925A /* lang_dz.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_dz.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_dz.swift; sourceTree = "<group>"; };
+		94137205D1BBA18BF6BF715E817C4C8F /* lang_yi.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_yi.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_yi.swift; sourceTree = "<group>"; };
+		96AE8738511139FA2B985C19B6AE41AF /* SwiftDate-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftDate-umbrella.h"; sourceTree = "<group>"; };
+		98DB79ADFE2AAB0AEFDB6DBE10C1DB8A /* lang_ee.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_ee.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_ee.swift; sourceTree = "<group>"; };
+		9A6BDD89185798B0F5F97E8FE30DF917 /* Pods-calendar2Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-calendar2Tests-resources.sh"; sourceTree = "<group>"; };
+		9AC51A7F8BAC87D6C0D056C6B863566B /* Pods-calendar2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-calendar2.debug.xcconfig"; sourceTree = "<group>"; };
+		9B59F1DF9D6FE263955E20FC9346A428 /* lang_es_AR.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_es_AR.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_es_AR.swift; sourceTree = "<group>"; };
+		9CD78C566871B7DD0C73C6C5A0634978 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D25785B464477527926CC0397120C1C /* SwiftDate-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftDate-prefix.pch"; sourceTree = "<group>"; };
+		9D5D52807A3B05ACCBCFD2BE727EA30B /* lang_mk.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_mk.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_mk.swift; sourceTree = "<group>"; };
+		A02797ECD5E228C82777C16FC4792107 /* Region.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Region.swift; path = Sources/SwiftDate/DateInRegion/Region.swift; sourceTree = "<group>"; };
+		A0BD7CA7013EA653FA87C50D2D220E70 /* lang_bs.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_bs.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_bs.swift; sourceTree = "<group>"; };
+		A1EF557AED38686C87B0952D134AA050 /* lang_lt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_lt.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_lt.swift; sourceTree = "<group>"; };
+		A3D351471406DC39E8A8E0921A1F3F04 /* lang_ar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_ar.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_ar.swift; sourceTree = "<group>"; };
+		A684DBA837876873298AA02792492297 /* JBDatePickerWeekDaysView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JBDatePickerWeekDaysView.swift; path = JBDatePicker/Classes/JBDatePickerWeekDaysView.swift; sourceTree = "<group>"; };
+		A96D3B675616AE3E4C237A71942D0B74 /* Pods_calendar2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_calendar2UITests.framework; path = "Pods-calendar2UITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A96D8E8B7890473267A6F9248999D2F3 /* lang_fil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_fil.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_fil.swift; sourceTree = "<group>"; };
+		A9A8231659A448A6E1DA9E1202288314 /* ISOFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ISOFormatter.swift; path = Sources/SwiftDate/Formatters/ISOFormatter.swift; sourceTree = "<group>"; };
+		AA78E5DEF1BD12661589636D6A088094 /* lang_ur.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_ur.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_ur.swift; sourceTree = "<group>"; };
+		ACA1CDEE757BA142E3E4BE6492FD64C7 /* JBDatePickerWeekView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JBDatePickerWeekView.swift; path = JBDatePicker/Classes/JBDatePickerWeekView.swift; sourceTree = "<group>"; };
+		AD6B891AC84E7915E8582A2D59D8AF78 /* DateComponents+Extras.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateComponents+Extras.swift"; path = "Sources/SwiftDate/Foundation+Extras/DateComponents+Extras.swift"; sourceTree = "<group>"; };
+		ADF05AC5907CCD5FA4B81FDB8EAAD104 /* lang_zh_Hans_MO.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_zh_Hans_MO.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_zh_Hans_MO.swift; sourceTree = "<group>"; };
+		B01477BF9C4A1A8E974F7087C5DCF4CC /* TimePeriodProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimePeriodProtocol.swift; path = Sources/SwiftDate/TimePeriod/TimePeriodProtocol.swift; sourceTree = "<group>"; };
+		B09F162E61ADF76710700F6D638AACBA /* Date+Compare.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+Compare.swift"; path = "Sources/SwiftDate/Date/Date+Compare.swift"; sourceTree = "<group>"; };
+		B3961121FE8F9B9F4D99FA0B00C7592A /* Pods-calendar2UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-calendar2UITests.release.xcconfig"; sourceTree = "<group>"; };
+		B592626122B76897C6A6E5390EC416D2 /* lang_ka.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_ka.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_ka.swift; sourceTree = "<group>"; };
+		B6D53EE7FEB74F7A3E0F590FCADDA102 /* lang_ml.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_ml.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_ml.swift; sourceTree = "<group>"; };
+		B77AC78393D033309F0D2F9479CD68CF /* lang_fi.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_fi.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_fi.swift; sourceTree = "<group>"; };
+		B99633ED22C967DBA516152DB03257E3 /* lang_sk.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_sk.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_sk.swift; sourceTree = "<group>"; };
+		BD1658FE375CA01137B43A92500E2ECB /* SwiftDate.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftDate.xcconfig; sourceTree = "<group>"; };
+		BD8CCD60E45F022935C3F8670A1CA203 /* lang_kl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_kl.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_kl.swift; sourceTree = "<group>"; };
+		BDE207927EC0A35F0611FD8BF6EDAE8D /* lang_br.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_br.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_br.swift; sourceTree = "<group>"; };
+		BFF6232D8E0B075C2EEB500B69028772 /* lang_vi.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_vi.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_vi.swift; sourceTree = "<group>"; };
+		C0F509BBB0FD5D90D9B4331C3199101F /* lang_sah.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_sah.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_sah.swift; sourceTree = "<group>"; };
+		C18B7A0D9370E46CEFAE4B11C77161E0 /* lang_se_FI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_se_FI.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_se_FI.swift; sourceTree = "<group>"; };
+		C1C20C4EB8B55EE6F714F39FDF68E155 /* lang_am.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_am.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_am.swift; sourceTree = "<group>"; };
+		C4E25A3401B13685EE0781C75490ED03 /* lang_lo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_lo.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_lo.swift; sourceTree = "<group>"; };
+		C4F32360841F74F885B863A7B32BD448 /* Pods-calendar2UITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-calendar2UITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C64A4C24A15969D4976E969AD1E5C0FB /* lang_zh_Hans_SG.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_zh_Hans_SG.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_zh_Hans_SG.swift; sourceTree = "<group>"; };
+		C65B0A61818BF04190B40F0B9DBE9080 /* Pods-calendar2.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-calendar2.modulemap"; sourceTree = "<group>"; };
+		C6E4B2F2DAEA322427C93395EBAA271F /* TimePeriod+Support.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TimePeriod+Support.swift"; path = "Sources/SwiftDate/TimePeriod/TimePeriod+Support.swift"; sourceTree = "<group>"; };
+		C7BBB6456B125568F8995EC37E0F6541 /* JBDatePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JBDatePicker.framework; path = JBDatePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7BCE536602E4C9F6A10676E64E59981 /* lang_sv.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_sv.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_sv.swift; sourceTree = "<group>"; };
+		C7E6FB549C461A7DCE4E1709507F8859 /* Pods-calendar2UITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-calendar2UITests-umbrella.h"; sourceTree = "<group>"; };
+		C8E44653F442032B5BB8820589C5BC28 /* lang_si.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_si.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_si.swift; sourceTree = "<group>"; };
+		C8EA0179B215841F30FB6ABD01FFE052 /* lang_ro.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_ro.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_ro.swift; sourceTree = "<group>"; };
+		CB705D07E9E6E99E3EB985D785CB5E42 /* lang_ja.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_ja.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_ja.swift; sourceTree = "<group>"; };
+		CB96AEC5F390E4ED2BFB0DBA2B0656C4 /* TimePeriodChain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimePeriodChain.swift; path = Sources/SwiftDate/TimePeriod/Groups/TimePeriodChain.swift; sourceTree = "<group>"; };
+		CD2983BFF1577AED6EA62F83B6CD24C0 /* TimePeriod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimePeriod.swift; path = Sources/SwiftDate/TimePeriod/TimePeriod.swift; sourceTree = "<group>"; };
+		CDB8E72ECEE69FFA079FE47AA77F894F /* Pods-calendar2Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-calendar2Tests.modulemap"; sourceTree = "<group>"; };
+		CDD10E5D6CC428B57AC952D518533D9F /* lang_th.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_th.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_th.swift; sourceTree = "<group>"; };
+		CDFCF69915511887F81EB282CBDF4E9A /* lang_ne.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_ne.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_ne.swift; sourceTree = "<group>"; };
+		CE51CC93636D2B3C0BD608BB5FA988A3 /* Calendars.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Calendars.swift; path = Sources/SwiftDate/Supports/Calendars.swift; sourceTree = "<group>"; };
+		CE6C16E361A54E5B77AD1CF94C3DF0A6 /* JBDatePicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JBDatePicker-dummy.m"; sourceTree = "<group>"; };
+		CF6722F274B3E0E77F9FA04630466F05 /* lang_cs.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_cs.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_cs.swift; sourceTree = "<group>"; };
+		CFCFA41B71735BCB53E5605B084B2285 /* lang_mr.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_mr.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_mr.swift; sourceTree = "<group>"; };
+		D0CDE55E17AA5EDDAA64AAC80D726609 /* SwiftDate.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftDate.modulemap; sourceTree = "<group>"; };
+		D1CADC6FD7A0016C5FE56856234FB4E4 /* RelativeFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RelativeFormatter.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/RelativeFormatter.swift; sourceTree = "<group>"; };
+		D203BFD563050653E6861AED354D2FC5 /* String+Parser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Parser.swift"; path = "Sources/SwiftDate/Foundation+Extras/String+Parser.swift"; sourceTree = "<group>"; };
+		D2707FE0B3C08411B56989D914C1B4C0 /* DateInRegion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateInRegion.swift; path = Sources/SwiftDate/DateInRegion/DateInRegion.swift; sourceTree = "<group>"; };
+		D4154021416443B41BDFC1CEA7D19D8B /* JBDatePicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JBDatePicker-prefix.pch"; sourceTree = "<group>"; };
+		D6CBBA84124F73867435F9F8224C13FF /* lang_sq.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_sq.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_sq.swift; sourceTree = "<group>"; };
+		D7AC3A535842A979B2CA0C04D1D3F195 /* lang_fur.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_fur.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_fur.swift; sourceTree = "<group>"; };
+		D927C08E2551F9EA60C64B59E7C86C95 /* Zones.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Zones.swift; path = Sources/SwiftDate/Supports/Zones.swift; sourceTree = "<group>"; };
+		D95514063D129AE83918BCB90239E833 /* Pods-calendar2-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-calendar2-dummy.m"; sourceTree = "<group>"; };
+		D9BDB26AA6976ACBAD6FF65BA1F0D4C3 /* lang_ms.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_ms.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_ms.swift; sourceTree = "<group>"; };
+		DB33CD7E4F20046DF6C83C20F36B710D /* JBDatePickerEnums.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JBDatePickerEnums.swift; path = JBDatePicker/Classes/JBDatePickerEnums.swift; sourceTree = "<group>"; };
+		DBC8E1BDB3F511F0106D02042CA95435 /* lang_zh_Hans_HK.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_zh_Hans_HK.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_zh_Hans_HK.swift; sourceTree = "<group>"; };
+		DEAA81C82259EAD9C87FD32DDA8F6D97 /* lang_zh_Hant_MO.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_zh_Hant_MO.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_zh_Hant_MO.swift; sourceTree = "<group>"; };
+		DF0154EB0DCB0CAE37370FFBD4E2BF5A /* TimePeriodGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimePeriodGroup.swift; path = Sources/SwiftDate/TimePeriod/Groups/TimePeriodGroup.swift; sourceTree = "<group>"; };
+		E1905CC7D270C358250011401499D76F /* Date+Components.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+Components.swift"; path = "Sources/SwiftDate/Date/Date+Components.swift"; sourceTree = "<group>"; };
+		E1918911B7E15AE007EAC92CE37893D4 /* lang_te.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_te.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_te.swift; sourceTree = "<group>"; };
+		E19A8FFABB8D604208CEA97804BC3C04 /* lang_ga.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_ga.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_ga.swift; sourceTree = "<group>"; };
+		E3F39DE91EAE2E0E3301F07DD64E1A84 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E52EF778645A410D9A100670BAE59557 /* TimeInterval+Formatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TimeInterval+Formatter.swift"; path = "Sources/SwiftDate/Foundation+Extras/TimeInterval+Formatter.swift"; sourceTree = "<group>"; };
+		E59AAD650EC427DFEDE388CFB23BC7E4 /* Pods-calendar2Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-calendar2Tests-frameworks.sh"; sourceTree = "<group>"; };
+		E6A7C6048313C8CF096968BE02B4E26D /* lang_mt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_mt.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_mt.swift; sourceTree = "<group>"; };
+		EBD4621B338E20070EE071BA51EC3C97 /* lang_nn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_nn.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_nn.swift; sourceTree = "<group>"; };
+		EC3636A81EAA33E6435DD718B5C0973C /* Pods-calendar2-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-calendar2-acknowledgements.markdown"; sourceTree = "<group>"; };
+		ECEB5BFE34A76C0B3EB6ACE392FDA371 /* Pods-calendar2Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-calendar2Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		ED92DB2005372709D6B707C79380DA14 /* Pods-calendar2-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-calendar2-umbrella.h"; sourceTree = "<group>"; };
+		ED941F99118DFB1CEC532DA1101C8680 /* JBDatePickerDayView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JBDatePickerDayView.swift; path = JBDatePicker/Classes/JBDatePickerDayView.swift; sourceTree = "<group>"; };
+		EEB3E305CFF89D78E035F1F958D7EB5A /* AssociatedValues.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssociatedValues.swift; path = Sources/SwiftDate/Supports/AssociatedValues.swift; sourceTree = "<group>"; };
+		F021AA29447151B829B9E6201F043552 /* lang_my.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_my.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_my.swift; sourceTree = "<group>"; };
+		F021B2226ADD986E36811316B0469EB0 /* Int+DateComponents.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Int+DateComponents.swift"; path = "Sources/SwiftDate/Foundation+Extras/Int+DateComponents.swift"; sourceTree = "<group>"; };
+		F0A273C737D2FD62CB0E1C5EF98E4665 /* lang_sd.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_sd.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_sd.swift; sourceTree = "<group>"; };
+		F49C21DF0AFED2A22CEA81FF4269DD00 /* lang_ug.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_ug.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_ug.swift; sourceTree = "<group>"; };
+		F59EB40ED4AD84CD27F53D5CF6B1F6B6 /* lang_ta.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_ta.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_ta.swift; sourceTree = "<group>"; };
+		F70C0EA085CFE9D1B8D2D9B925ACA113 /* lang_zh.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_zh.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_zh.swift; sourceTree = "<group>"; };
+		F7A4C32724DFC05604BEEC3BE9F0DB34 /* lang_kk.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_kk.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_kk.swift; sourceTree = "<group>"; };
+		F7FFDBC3C9368953A50E973E7F745175 /* JBDatePickerMonthView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JBDatePickerMonthView.swift; path = JBDatePicker/Classes/JBDatePickerMonthView.swift; sourceTree = "<group>"; };
+		FCBFF1B6D59BC4026C0B72788415E969 /* lang_be.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_be.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_be.swift; sourceTree = "<group>"; };
+		FDE6C3006A7E3A2CAB045AAA002C59A7 /* lang_zh_Hant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_zh_Hant.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_zh_Hant.swift; sourceTree = "<group>"; };
+		FFA0FE97BF63831C9A3FE53DD3F5C5F6 /* lang_zh_Hant_HK.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = lang_zh_Hant_HK.swift; path = Sources/SwiftDate/Formatters/RelativeFormatter/languages/lang_zh_Hant_HK.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		23CBB5DB803EC4180549CB570499DE8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D0BE8C2216F72F093B91B2B6FEAD400 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A31A23F8828CBB1DD6DE34944A8A07AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AEEFBF0A76031F98DCE901EBFC74EE8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D450654C2AA788281306773A85F80974 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FAD863D39C3CB851921669101CF32E7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF9E663E92A7DDE74E4764DFB217766D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49394BB915941D51BD3B5B42D0E9C75B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8DF5919F0CB582CDEA6DDC3B4CB6DFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BF42BAC46E156FE839B90AC57B3F4A4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A3A81BBC3165F5137D93B8AE426D587 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C7BBB6456B125568F8995EC37E0F6541 /* JBDatePicker.framework */,
+				5C1FB919F700F324104DA695E7EE54D5 /* Pods_calendar2.framework */,
+				1756A79A0C2F80FA7E85B18B25D0D7A2 /* Pods_calendar2Tests.framework */,
+				A96D3B675616AE3E4C237A71942D0B74 /* Pods_calendar2UITests.framework */,
+				2881777A1BD13C15FBACA65A565402FB /* SwiftDate.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		344834D9A193AFA0F25E3DC4035CA9BF /* Pods-calendar2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				13635A087CAB9B9AC76B428C1C0D6EF6 /* Info.plist */,
+				CDB8E72ECEE69FFA079FE47AA77F894F /* Pods-calendar2Tests.modulemap */,
+				ECEB5BFE34A76C0B3EB6ACE392FDA371 /* Pods-calendar2Tests-acknowledgements.markdown */,
+				4569628E54C05BB5D91F3485D09AC739 /* Pods-calendar2Tests-acknowledgements.plist */,
+				03556D4251CA515467F0190D2B47DCC0 /* Pods-calendar2Tests-dummy.m */,
+				E59AAD650EC427DFEDE388CFB23BC7E4 /* Pods-calendar2Tests-frameworks.sh */,
+				9A6BDD89185798B0F5F97E8FE30DF917 /* Pods-calendar2Tests-resources.sh */,
+				4F2093DD5F19BB28F6C07954757689FE /* Pods-calendar2Tests-umbrella.h */,
+				1B0778CC000FA2173E10B424E95A13E2 /* Pods-calendar2Tests.debug.xcconfig */,
+				1B569B6FFBF77EB7F7CE32CED2AFB072 /* Pods-calendar2Tests.release.xcconfig */,
+			);
+			name = "Pods-calendar2Tests";
+			path = "Target Support Files/Pods-calendar2Tests";
+			sourceTree = "<group>";
+		};
+		5170ED00DF04AC1EF7B9B5AAE3ACB3BB /* Pods-calendar2UITests */ = {
+			isa = PBXGroup;
+			children = (
+				11FE2A3589316B4EF989085BFAE0B5EF /* Info.plist */,
+				250BB7F8AF58F22732D78148D346A10B /* Pods-calendar2UITests.modulemap */,
+				C4F32360841F74F885B863A7B32BD448 /* Pods-calendar2UITests-acknowledgements.markdown */,
+				0F9648F9C76BD6884D5B0BECDFFEB900 /* Pods-calendar2UITests-acknowledgements.plist */,
+				16E196DBE8C6D453ED2C49DB49B8617F /* Pods-calendar2UITests-dummy.m */,
+				92600E840F571807D87D53D38462B792 /* Pods-calendar2UITests-frameworks.sh */,
+				6E5E8D27B474176CC8E43D3D856E6B1E /* Pods-calendar2UITests-resources.sh */,
+				C7E6FB549C461A7DCE4E1709507F8859 /* Pods-calendar2UITests-umbrella.h */,
+				4A6B7735AE8D04B89C5E44B15C720F2A /* Pods-calendar2UITests.debug.xcconfig */,
+				B3961121FE8F9B9F4D99FA0B00C7592A /* Pods-calendar2UITests.release.xcconfig */,
+			);
+			name = "Pods-calendar2UITests";
+			path = "Target Support Files/Pods-calendar2UITests";
+			sourceTree = "<group>";
+		};
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		66DAF40417FE625E3EF004E7696D58CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A19BAB69ACCFC5AFE91AAA3E8B1E064B /* JBDatePicker */,
+				767BC9F163B6845B861C0481E66EC6C4 /* SwiftDate */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6D372DECC31A52686F926E488EA82787 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6FFA4D5311E1DBF78DA70BC1B3562FA8 /* Pods-calendar2 */,
+				344834D9A193AFA0F25E3DC4035CA9BF /* Pods-calendar2Tests */,
+				5170ED00DF04AC1EF7B9B5AAE3ACB3BB /* Pods-calendar2UITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		6FFA4D5311E1DBF78DA70BC1B3562FA8 /* Pods-calendar2 */ = {
+			isa = PBXGroup;
+			children = (
+				80C3B5D09548BE93C5887837B25CF025 /* Info.plist */,
+				C65B0A61818BF04190B40F0B9DBE9080 /* Pods-calendar2.modulemap */,
+				EC3636A81EAA33E6435DD718B5C0973C /* Pods-calendar2-acknowledgements.markdown */,
+				1EDB1A0E892D7C50EC52C6D63872EE0A /* Pods-calendar2-acknowledgements.plist */,
+				D95514063D129AE83918BCB90239E833 /* Pods-calendar2-dummy.m */,
+				5034344484BD0169BA7D4BF66D1699F9 /* Pods-calendar2-frameworks.sh */,
+				349CE3B6B3F85D5E18D9EE3B2967EED3 /* Pods-calendar2-resources.sh */,
+				ED92DB2005372709D6B707C79380DA14 /* Pods-calendar2-umbrella.h */,
+				9AC51A7F8BAC87D6C0D056C6B863566B /* Pods-calendar2.debug.xcconfig */,
+				884A7A57534C8689D002899F1BE8332F /* Pods-calendar2.release.xcconfig */,
+			);
+			name = "Pods-calendar2";
+			path = "Target Support Files/Pods-calendar2";
+			sourceTree = "<group>";
+		};
+		767BC9F163B6845B861C0481E66EC6C4 /* SwiftDate */ = {
+			isa = PBXGroup;
+			children = (
+				EEB3E305CFF89D78E035F1F958D7EB5A /* AssociatedValues.swift */,
+				CE51CC93636D2B3C0BD608BB5FA988A3 /* Calendars.swift */,
+				05EA10DB9EEF66A500C0E6D5FC569B21 /* Commons.swift */,
+				6422C759AF864369D31383858536D075 /* Date.swift */,
+				B09F162E61ADF76710700F6D638AACBA /* Date+Compare.swift */,
+				E1905CC7D270C358250011401499D76F /* Date+Components.swift */,
+				0BDBBDBB5BA1ACB6360CE29276667336 /* Date+Create.swift */,
+				87807464500145415034A8D7A8F4872D /* Date+Math.swift */,
+				AD6B891AC84E7915E8582A2D59D8AF78 /* DateComponents+Extras.swift */,
+				D2707FE0B3C08411B56989D914C1B4C0 /* DateInRegion.swift */,
+				1260F2080D9FDC0C22CE043A21F104DF /* DateInRegion+Compare.swift */,
+				28F44FFF491823737B3A3E182DA83A9A /* DateInRegion+Components.swift */,
+				50F9C518FA1111222D1E462D4AEEDC7B /* DateInRegion+Create.swift */,
+				6D3D07386BFDF8EC7CE405C5B88BDA1E /* DateInRegion+Math.swift */,
+				465F311317F69E8673A349D8394D3D89 /* DateRepresentable.swift */,
+				45442561E29B698816D3B40546B8FFBF /* DotNetParserFormatter.swift */,
+				32BD82EADC69801DE20D1587FFD75FF8 /* Formatter+Protocols.swift */,
+				F021B2226ADD986E36811316B0469EB0 /* Int+DateComponents.swift */,
+				A9A8231659A448A6E1DA9E1202288314 /* ISOFormatter.swift */,
+				4775907D36E596663DAB7B3EAA7698F6 /* ISOParser.swift */,
+				622F940F7E4B4CEE80F351B061A0E7D1 /* lang_af.swift */,
+				C1C20C4EB8B55EE6F714F39FDF68E155 /* lang_am.swift */,
+				A3D351471406DC39E8A8E0921A1F3F04 /* lang_ar.swift */,
+				5AB5E641F3CF177225496E314EEE7A06 /* lang_ar_AE.swift */,
+				8A95436D9053DE55B7896D83AE3D3699 /* lang_as.swift */,
+				8A6536BFC9A395C658696BEEDCB9DA91 /* lang_az.swift */,
+				FCBFF1B6D59BC4026C0B72788415E969 /* lang_be.swift */,
+				60C9DDFB06B9064D8CCD4EEAB423849E /* lang_bg.swift */,
+				1C17F02E5EE9CE22D3D34D73B3EDCC59 /* lang_bn.swift */,
+				BDE207927EC0A35F0611FD8BF6EDAE8D /* lang_br.swift */,
+				A0BD7CA7013EA653FA87C50D2D220E70 /* lang_bs.swift */,
+				2DB278B7BACD82A37A4471D871913DAB /* lang_bsCyrl.swift */,
+				17AC302C3355B7A627678506BBDA5EE8 /* lang_ca.swift */,
+				CF6722F274B3E0E77F9FA04630466F05 /* lang_cs.swift */,
+				1FB7F9603D9256B69A70AFCAA1F2D323 /* lang_cy.swift */,
+				3C8C5762EA22F93F87EAAEDED3415F19 /* lang_da.swift */,
+				8E21309208B48C6EE488A9E8DBEE68A7 /* lang_de.swift */,
+				028C4871534EF68725519502F88D32B0 /* lang_dsb.swift */,
+				93F1ACCD40583FF45A2D2D3310A3925A /* lang_dz.swift */,
+				98DB79ADFE2AAB0AEFDB6DBE10C1DB8A /* lang_ee.swift */,
+				215DA23C591E0D2C2AE61461A7C88FA3 /* lang_el.swift */,
+				45872A0B6A3838BA4AEB8B29E5BD8EFA /* lang_en.swift */,
+				30D9385DCC410747E76C83D9092616FF /* lang_es.swift */,
+				9B59F1DF9D6FE263955E20FC9346A428 /* lang_es_AR.swift */,
+				932737572C8D3B48647C1F28B167FDA3 /* lang_es_MX.swift */,
+				56EBC61161F59DC92AF35BA4BC98EB4B /* lang_es_PY.swift */,
+				0686E2393803C1249777B7D0707652CC /* lang_es_US.swift */,
+				699FA764CCC194C89B1A07AD96C60FC9 /* lang_et.swift */,
+				6D0AC7EB0B5D63580C7FD6A5473D474D /* lang_eu.swift */,
+				0E2BDB276B51DF73C5B4DF2810AAE4A5 /* lang_fa.swift */,
+				B77AC78393D033309F0D2F9479CD68CF /* lang_fi.swift */,
+				A96D8E8B7890473267A6F9248999D2F3 /* lang_fil.swift */,
+				8DF8046E0D7419F378331C5471AB33EE /* lang_fo.swift */,
+				254EB090491581C50BCC31E6EDE272ED /* lang_fr.swift */,
+				30D13B1DA3B7DCDE3E99623F136DFA62 /* lang_fr_CA.swift */,
+				D7AC3A535842A979B2CA0C04D1D3F195 /* lang_fur.swift */,
+				3A122EAC802DE3B0C3AA5ABD5F8C60AD /* lang_fy.swift */,
+				E19A8FFABB8D604208CEA97804BC3C04 /* lang_ga.swift */,
+				936AEED45812D55274C937541807CC3C /* lang_gd.swift */,
+				56C99F9FB5C658E03F267C59ED5F3982 /* lang_gl.swift */,
+				5D423FA726A8C8CC77F2FDB047AE3D18 /* lang_gu.swift */,
+				15ABFC2837FB529496BCAAF144320CC6 /* lang_he.swift */,
+				31C5FFEB5D2133658A605E04595CBD60 /* lang_hi.swift */,
+				8328A71BC832BD720BD4A696BAB4B2C3 /* lang_hr.swift */,
+				8A9ACDBB8F3F30DDF53849D6BF71AA4E /* lang_hsb.swift */,
+				0BA371B187D09E2FD82E0F19FA934B57 /* lang_hu.swift */,
+				89EFBB599AEFD02E31BD067A0B967BB8 /* lang_hy.swift */,
+				0F5CF35A918D521888FE05C3F033B4F1 /* lang_id.swift */,
+				786F94DA946A1D8B6F3050139E8F3D50 /* lang_is.swift */,
+				08675B715572D75C7FE3A1B90959780D /* lang_it.swift */,
+				CB705D07E9E6E99E3EB985D785CB5E42 /* lang_ja.swift */,
+				8459EA696868286A943A7206CDC36703 /* lang_jgo.swift */,
+				B592626122B76897C6A6E5390EC416D2 /* lang_ka.swift */,
+				3161DC8C7B98105854C7BBF50E8B22FC /* lang_kea.swift */,
+				F7A4C32724DFC05604BEEC3BE9F0DB34 /* lang_kk.swift */,
+				BD8CCD60E45F022935C3F8670A1CA203 /* lang_kl.swift */,
+				0AA823BFEE89F428DC7877094A44AC9A /* lang_km.swift */,
+				62A5DE11370553A2D75B3B3648D4D4E3 /* lang_kn.swift */,
+				71241F2653CB8CD8A9D602DBB7E6BEC8 /* lang_ko.swift */,
+				2639B535CA30C95335E1A642DC5DF4D9 /* lang_kok.swift */,
+				1DA1540F79C2FDFC4BCC76229D4BCAFE /* lang_ksh.swift */,
+				2224664A1EC851F61DBB411A79FCF159 /* lang_ky.swift */,
+				7976772688F28BA0459EB51BB928ADB3 /* lang_lb.swift */,
+				4217280BB7491F145E08F4B8B9411D24 /* lang_lkt.swift */,
+				C4E25A3401B13685EE0781C75490ED03 /* lang_lo.swift */,
+				A1EF557AED38686C87B0952D134AA050 /* lang_lt.swift */,
+				649581911E9E04D4222F94C71AFFF23C /* lang_lv.swift */,
+				9D5D52807A3B05ACCBCFD2BE727EA30B /* lang_mk.swift */,
+				B6D53EE7FEB74F7A3E0F590FCADDA102 /* lang_ml.swift */,
+				5892EAB284364DAC61B697F12C510B7D /* lang_mn.swift */,
+				CFCFA41B71735BCB53E5605B084B2285 /* lang_mr.swift */,
+				D9BDB26AA6976ACBAD6FF65BA1F0D4C3 /* lang_ms.swift */,
+				E6A7C6048313C8CF096968BE02B4E26D /* lang_mt.swift */,
+				F021AA29447151B829B9E6201F043552 /* lang_my.swift */,
+				6078B2D51703B29682A0E634E40EE624 /* lang_mzn.swift */,
+				6BA75018D14621EEE5808D32A635DCF9 /* lang_nb.swift */,
+				CDFCF69915511887F81EB282CBDF4E9A /* lang_ne.swift */,
+				7599ABB41ABEEEEBA8283CD050CFA45F /* lang_nl.swift */,
+				EBD4621B338E20070EE071BA51EC3C97 /* lang_nn.swift */,
+				2B3DD28A98FF2B6BED21FA2DEBD7500F /* lang_or.swift */,
+				74C042C50BCBA221D0AE12ADFB9D031B /* lang_pa.swift */,
+				4421A17A2C4F61C2D7BD1FC157BE2064 /* lang_pl.swift */,
+				784F0DCF5C729C7458A3EC50CAD305D2 /* lang_ps.swift */,
+				199D3A30B0A24ED08CA021926A7195E5 /* lang_pt.swift */,
+				C8EA0179B215841F30FB6ABD01FFE052 /* lang_ro.swift */,
+				82F2E36D8BA30B492A45472CD2007520 /* lang_ru.swift */,
+				C0F509BBB0FD5D90D9B4331C3199101F /* lang_sah.swift */,
+				F0A273C737D2FD62CB0E1C5EF98E4665 /* lang_sd.swift */,
+				10110C4F15ED535A125EB77A460F0D7B /* lang_se.swift */,
+				C18B7A0D9370E46CEFAE4B11C77161E0 /* lang_se_FI.swift */,
+				C8E44653F442032B5BB8820589C5BC28 /* lang_si.swift */,
+				B99633ED22C967DBA516152DB03257E3 /* lang_sk.swift */,
+				70B80EEF7C93A496BB43DF6CF23D47DD /* lang_sl.swift */,
+				D6CBBA84124F73867435F9F8224C13FF /* lang_sq.swift */,
+				07FFD9FBAE6494A6AD7A49F98FDEFCBD /* lang_sr.swift */,
+				5A329C43EE1CBBA177027CBBC994F56A /* lang_sr_Latn.swift */,
+				C7BCE536602E4C9F6A10676E64E59981 /* lang_sv.swift */,
+				332F794F26DBBC34884DE60099BEC463 /* lang_sw.swift */,
+				F59EB40ED4AD84CD27F53D5CF6B1F6B6 /* lang_ta.swift */,
+				E1918911B7E15AE007EAC92CE37893D4 /* lang_te.swift */,
+				CDD10E5D6CC428B57AC952D518533D9F /* lang_th.swift */,
+				1AA946B077D2AB8F72219B7737446554 /* lang_ti.swift */,
+				67E69A3F728E1D3C42614E130C9D5C67 /* lang_tk.swift */,
+				0945F61BBBF7A0EA2071DE2EA7172109 /* lang_to.swift */,
+				595F728E8503CBB554B0B6EE011BB7C6 /* lang_tr.swift */,
+				F49C21DF0AFED2A22CEA81FF4269DD00 /* lang_ug.swift */,
+				6DAF09ABC406C98A87F696B3CB2349AC /* lang_uk.swift */,
+				AA78E5DEF1BD12661589636D6A088094 /* lang_ur.swift */,
+				53CD828F6029C1E9E4E283925485BEA6 /* lang_ur_IN.swift */,
+				779089DC5A50D23AFD91BC31F2DEE667 /* lang_uz.swift */,
+				44FF869A0D336CA777B321417C43FA2C /* lang_uz_Cyrl.swift */,
+				BFF6232D8E0B075C2EEB500B69028772 /* lang_vi.swift */,
+				50CE60A591E8DD61A01C80D33B125457 /* lang_wae.swift */,
+				94137205D1BBA18BF6BF715E817C4C8F /* lang_yi.swift */,
+				25B11094C050851CEC09418CB8E98B26 /* lang_yue_Hans.swift */,
+				26B2763F5951ED5247806552D9B082DE /* lang_yue_Hant.swift */,
+				F70C0EA085CFE9D1B8D2D9B925ACA113 /* lang_zh.swift */,
+				DBC8E1BDB3F511F0106D02042CA95435 /* lang_zh_Hans_HK.swift */,
+				ADF05AC5907CCD5FA4B81FDB8EAAD104 /* lang_zh_Hans_MO.swift */,
+				C64A4C24A15969D4976E969AD1E5C0FB /* lang_zh_Hans_SG.swift */,
+				FDE6C3006A7E3A2CAB045AAA002C59A7 /* lang_zh_Hant.swift */,
+				FFA0FE97BF63831C9A3FE53DD3F5C5F6 /* lang_zh_Hant_HK.swift */,
+				DEAA81C82259EAD9C87FD32DDA8F6D97 /* lang_zh_Hant_MO.swift */,
+				8129D569B574DF20D87208E723732041 /* lang_zu.swift */,
+				672564521670EA5D696136E76AB752A2 /* Locales.swift */,
+				A02797ECD5E228C82777C16FC4792107 /* Region.swift */,
+				D1CADC6FD7A0016C5FE56856234FB4E4 /* RelativeFormatter.swift */,
+				6F548F1F11838C07A0053DDC1A0D7364 /* RelativeFormatter+Style.swift */,
+				D203BFD563050653E6861AED354D2FC5 /* String+Parser.swift */,
+				245D1BE5EA103130282063E8844905BB /* SwiftDate.swift */,
+				E52EF778645A410D9A100670BAE59557 /* TimeInterval+Formatter.swift */,
+				CD2983BFF1577AED6EA62F83B6CD24C0 /* TimePeriod.swift */,
+				C6E4B2F2DAEA322427C93395EBAA271F /* TimePeriod+Support.swift */,
+				CB96AEC5F390E4ED2BFB0DBA2B0656C4 /* TimePeriodChain.swift */,
+				537A1F32774DACA06053DA90D391063E /* TimePeriodCollection.swift */,
+				DF0154EB0DCB0CAE37370FFBD4E2BF5A /* TimePeriodGroup.swift */,
+				B01477BF9C4A1A8E974F7087C5DCF4CC /* TimePeriodProtocol.swift */,
+				D927C08E2551F9EA60C64B59E7C86C95 /* Zones.swift */,
+				A526CA5D2B1B5B50A98410DABFF97A52 /* Support Files */,
+			);
+			name = SwiftDate;
+			path = SwiftDate;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				66DAF40417FE625E3EF004E7696D58CF /* Pods */,
+				1A3A81BBC3165F5137D93B8AE426D587 /* Products */,
+				6D372DECC31A52686F926E488EA82787 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		962A4C5A673EC3932BC55BE3BAFC2C0A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9CD78C566871B7DD0C73C6C5A0634978 /* Info.plist */,
+				4754E237BADD0D8CA47A10106114ED80 /* JBDatePicker.modulemap */,
+				86162003939B06A21CBE301DE36CE14B /* JBDatePicker.xcconfig */,
+				CE6C16E361A54E5B77AD1CF94C3DF0A6 /* JBDatePicker-dummy.m */,
+				D4154021416443B41BDFC1CEA7D19D8B /* JBDatePicker-prefix.pch */,
+				52538D295DE7672B2DEF7C86F49DFC6A /* JBDatePicker-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/JBDatePicker";
+			sourceTree = "<group>";
+		};
+		A19BAB69ACCFC5AFE91AAA3E8B1E064B /* JBDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				8EA391AD116945B21B06F55B3C58EE0F /* JBDate.swift */,
+				0DEF8EE9E9769E41ADEA039D24B72138 /* JBDateExtension.swift */,
+				39193E1C380C997E5AAB093D9FF9C11C /* JBDatePickerContentVC.swift */,
+				ED941F99118DFB1CEC532DA1101C8680 /* JBDatePickerDayView.swift */,
+				DB33CD7E4F20046DF6C83C20F36B710D /* JBDatePickerEnums.swift */,
+				4952EEE5B9B6F0AF47B9525EB0AE00D3 /* JBDatePickerManager.swift */,
+				F7FFDBC3C9368953A50E973E7F745175 /* JBDatePickerMonthView.swift */,
+				34EF7D930B805CAEC4DDF1D4FD7AFCE7 /* JBDatePickerSelectionView.swift */,
+				70795A275996A0AFCB989116403E2A8F /* JBDatePickerView.swift */,
+				844FAFEAA27B6389DB103B5662AE2799 /* JBDatePickerViewDelegate.swift */,
+				A684DBA837876873298AA02792492297 /* JBDatePickerWeekDaysView.swift */,
+				ACA1CDEE757BA142E3E4BE6492FD64C7 /* JBDatePickerWeekView.swift */,
+				7C8B1320F2E20FBA309306CC8EFD5762 /* JBFont.swift */,
+				962A4C5A673EC3932BC55BE3BAFC2C0A /* Support Files */,
+			);
+			name = JBDatePicker;
+			path = JBDatePicker;
+			sourceTree = "<group>";
+		};
+		A526CA5D2B1B5B50A98410DABFF97A52 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E3F39DE91EAE2E0E3301F07DD64E1A84 /* Info.plist */,
+				D0CDE55E17AA5EDDAA64AAC80D726609 /* SwiftDate.modulemap */,
+				BD1658FE375CA01137B43A92500E2ECB /* SwiftDate.xcconfig */,
+				58F8BAC51690E50D3F12571602928D87 /* SwiftDate-dummy.m */,
+				9D25785B464477527926CC0397120C1C /* SwiftDate-prefix.pch */,
+				96AE8738511139FA2B985C19B6AE41AF /* SwiftDate-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftDate";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1B21353A2B1CBC61A9D748CD370CD027 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B6A080D83C8EDB21F626D0608F73664 /* SwiftDate-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22609C933AE18291940475F2EAC68CEF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E612C05069702FD8BFF9B2BF7E6463C0 /* Pods-calendar2Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A40578202DAEF4CEA78BA128CB43922 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACBAA34E321323615E4999A139540C07 /* Pods-calendar2UITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B72C17DEB33A33920DE4ECAAE7A9087 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A77E0602E85957B4BEDF28F32B86284B /* Pods-calendar2-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98EF441EFD94F191D0A5162165ACA9EA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB1AFD2DA4A274361F9FA6E3F662029E /* JBDatePicker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		129486DB0BF07A02F84712D360E48374 /* Pods-calendar2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A9D506C8322C641E093D86EBC80F07A /* Build configuration list for PBXNativeTarget "Pods-calendar2Tests" */;
+			buildPhases = (
+				0D696D2185B76B3C7A0F7987E964A124 /* Sources */,
+				D450654C2AA788281306773A85F80974 /* Frameworks */,
+				22609C933AE18291940475F2EAC68CEF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				579FE726BE64836518124518E9CA3F0B /* PBXTargetDependency */,
+			);
+			name = "Pods-calendar2Tests";
+			productName = "Pods-calendar2Tests";
+			productReference = 1756A79A0C2F80FA7E85B18B25D0D7A2 /* Pods_calendar2Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9A78545F11A83C5AA8CFEE8407FDB8D2 /* Pods-calendar2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01E62E07B0EEE0A2DA703D23C101F948 /* Build configuration list for PBXNativeTarget "Pods-calendar2" */;
+			buildPhases = (
+				111B7B11C59A2157C7DDFC83671DCE14 /* Sources */,
+				A31A23F8828CBB1DD6DE34944A8A07AD /* Frameworks */,
+				8B72C17DEB33A33920DE4ECAAE7A9087 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAE3139C731E1CB8269EAB668BDD9F07 /* PBXTargetDependency */,
+				49A1CE639AE69BE493688A7D0F242E1A /* PBXTargetDependency */,
+			);
+			name = "Pods-calendar2";
+			productName = "Pods-calendar2";
+			productReference = 5C1FB919F700F324104DA695E7EE54D5 /* Pods_calendar2.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A01A78E1415B1103149D782482AE955F /* JBDatePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC0822936AF96B1C54E578B7F63AC254 /* Build configuration list for PBXNativeTarget "JBDatePicker" */;
+			buildPhases = (
+				73765D8A7D1F7FBFD43E9438272CB35A /* Sources */,
+				23CBB5DB803EC4180549CB570499DE8A /* Frameworks */,
+				98EF441EFD94F191D0A5162165ACA9EA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JBDatePicker;
+			productName = JBDatePicker;
+			productReference = C7BBB6456B125568F8995EC37E0F6541 /* JBDatePicker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D72DB44A5D594EEE46407AD30CBCF808 /* SwiftDate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFE4B5A2FC6A04717DC43CDD0FC47A8A /* Build configuration list for PBXNativeTarget "SwiftDate" */;
+			buildPhases = (
+				A39508BB55D13C14C9DF5C6978A8B8B4 /* Sources */,
+				E8DF5919F0CB582CDEA6DDC3B4CB6DFE /* Frameworks */,
+				1B21353A2B1CBC61A9D748CD370CD027 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftDate;
+			productName = SwiftDate;
+			productReference = 2881777A1BD13C15FBACA65A565402FB /* SwiftDate.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FD7CFD8331EEA7F392EE580D3BB30234 /* Pods-calendar2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 261E52FAF271ADC787ADEEFA63FFEAFF /* Build configuration list for PBXNativeTarget "Pods-calendar2UITests" */;
+			buildPhases = (
+				BE7F4790A6A8F58AA3C807B8590AFB6A /* Sources */,
+				DF9E663E92A7DDE74E4764DFB217766D /* Frameworks */,
+				3A40578202DAEF4CEA78BA128CB43922 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A6C39ADBE384808E4477AB466EFD5DB /* PBXTargetDependency */,
+			);
+			name = "Pods-calendar2UITests";
+			productName = "Pods-calendar2UITests";
+			productReference = A96D3B675616AE3E4C237A71942D0B74 /* Pods_calendar2UITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 1A3A81BBC3165F5137D93B8AE426D587 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A01A78E1415B1103149D782482AE955F /* JBDatePicker */,
+				9A78545F11A83C5AA8CFEE8407FDB8D2 /* Pods-calendar2 */,
+				129486DB0BF07A02F84712D360E48374 /* Pods-calendar2Tests */,
+				FD7CFD8331EEA7F392EE580D3BB30234 /* Pods-calendar2UITests */,
+				D72DB44A5D594EEE46407AD30CBCF808 /* SwiftDate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D696D2185B76B3C7A0F7987E964A124 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				267740924F13A37FCD2F69488494D555 /* Pods-calendar2Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		111B7B11C59A2157C7DDFC83671DCE14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87B8568FEBB5A1E0418CAE6FF7D4E040 /* Pods-calendar2-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73765D8A7D1F7FBFD43E9438272CB35A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDC1B10687FCC1A8048DD1550616B0B2 /* JBDate.swift in Sources */,
+				71011C9C5D422DB07D9BEEF2422227B0 /* JBDateExtension.swift in Sources */,
+				F9EB5603BA22EB5E572F859BCAB92045 /* JBDatePicker-dummy.m in Sources */,
+				F1B1ED7B6A820856D76A875B6734AAC0 /* JBDatePickerContentVC.swift in Sources */,
+				266DE0A813CE465574D1595647AB1CA2 /* JBDatePickerDayView.swift in Sources */,
+				118CFE0AAF1AE251D69C8AC1775FAB55 /* JBDatePickerEnums.swift in Sources */,
+				AD4F2483D406378D6C2D6F4302F39B6F /* JBDatePickerManager.swift in Sources */,
+				FAAA2B9029AB4916752A729905EF4C42 /* JBDatePickerMonthView.swift in Sources */,
+				59D2E01C5C229CA54BE5DCE9C4881AF0 /* JBDatePickerSelectionView.swift in Sources */,
+				F9F60E54082685C75223F08A6D78E6E3 /* JBDatePickerView.swift in Sources */,
+				C37A3A9842FC6D80BE5DB9F3B4061D85 /* JBDatePickerViewDelegate.swift in Sources */,
+				1E4FC7304D41CF6C829D3BC645676925 /* JBDatePickerWeekDaysView.swift in Sources */,
+				146661DAA790C18C6FD756AEAFE42503 /* JBDatePickerWeekView.swift in Sources */,
+				2DEAA2FC7CA49FF6EF86A4635AA81214 /* JBFont.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A39508BB55D13C14C9DF5C6978A8B8B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				678D6823FC675DEDF00C5B9ACEFFC6BA /* AssociatedValues.swift in Sources */,
+				5F8DDBE43C0257627268B4360FE4D038 /* Calendars.swift in Sources */,
+				74A3B1AD795DDAF23915B8891CA4DB79 /* Commons.swift in Sources */,
+				051C530F1C5B0693E08DDABD5C68EFD9 /* Date+Compare.swift in Sources */,
+				D28385BE27460125EED4B698B2483E0F /* Date+Components.swift in Sources */,
+				956E46F58E242E7E893EAB5A4DAE376B /* Date+Create.swift in Sources */,
+				0275E1CFE52E6565272CB9158BCE7934 /* Date+Math.swift in Sources */,
+				D219452D6DAFAA5786F939C07DAC1B0F /* Date.swift in Sources */,
+				85670356ABF10D5B5E447DDC5558BE0E /* DateComponents+Extras.swift in Sources */,
+				22661AAC3F82D0BF916F361D54F82790 /* DateInRegion+Compare.swift in Sources */,
+				36057F83E755D4EA4A62D8D9C8F0B137 /* DateInRegion+Components.swift in Sources */,
+				A90181B394044BFDF7F5521DBFC96F2B /* DateInRegion+Create.swift in Sources */,
+				CAC9B1223A64B52C5537D98562FA5EFA /* DateInRegion+Math.swift in Sources */,
+				59E9F4FB090341CB041D2B6595FC903D /* DateInRegion.swift in Sources */,
+				250D891C8866123A36CB35BFDAD64065 /* DateRepresentable.swift in Sources */,
+				356ECFD5A6DDE8011CDE90E305BDC392 /* DotNetParserFormatter.swift in Sources */,
+				E03228C07BBC8952BE96688A648050A7 /* Formatter+Protocols.swift in Sources */,
+				D98E80F7497D4F49E3DE1EBA4065A250 /* Int+DateComponents.swift in Sources */,
+				EB6AD8D07B75F5EDD24EE69E387841E8 /* ISOFormatter.swift in Sources */,
+				C1DC19AC2A03B2DDE7A4FD93F1B942D8 /* ISOParser.swift in Sources */,
+				F66EE9DE9D80E702E3DB80F076F416FD /* lang_af.swift in Sources */,
+				651F699CAAE4166670A936E86EB50C79 /* lang_am.swift in Sources */,
+				7FC9B6B07A1F3EE428682ED3B17F84CF /* lang_ar.swift in Sources */,
+				4196E48FFE96C2EC8CFDB6EB735E2B79 /* lang_ar_AE.swift in Sources */,
+				84B4DDEEC84EE3D7508A0544854A3865 /* lang_as.swift in Sources */,
+				06EF9979D10A623DC65A7F0B1267F51A /* lang_az.swift in Sources */,
+				4C2D22CDCFFAD031BECDC0F93CA4B34E /* lang_be.swift in Sources */,
+				4A0E1FDAE73BC3BDFE8FBF892949B527 /* lang_bg.swift in Sources */,
+				D2E9E9FDF168E4D6A3AE682456109B3B /* lang_bn.swift in Sources */,
+				796064B48088128A35FCBB22EE69005E /* lang_br.swift in Sources */,
+				C8E140FBD19DE7EC73A0851E7974CF7B /* lang_bs.swift in Sources */,
+				554B077EA8FF7E7CC771F4541011D6C2 /* lang_bsCyrl.swift in Sources */,
+				65856EA6DDDF5505DA29E01A69D2C859 /* lang_ca.swift in Sources */,
+				899FB5C8A56B95B7F0449163952FED89 /* lang_cs.swift in Sources */,
+				F7F7DB2F3097A426E98026779B5371FB /* lang_cy.swift in Sources */,
+				E7AC8FDDC04FC875BEC3E1E6F9DB49A7 /* lang_da.swift in Sources */,
+				567E88F5A30442EB14B8F0EA7DCAFE36 /* lang_de.swift in Sources */,
+				7280F88B5FBE89B1FE6BA7B037EA829C /* lang_dsb.swift in Sources */,
+				0976F39CB12B58CE5755D40500D07985 /* lang_dz.swift in Sources */,
+				CE9433C3CF2CF1237CB0667B41200793 /* lang_ee.swift in Sources */,
+				2F67B12F0822CC350DEF8EE948078C06 /* lang_el.swift in Sources */,
+				07FCC1781C13851736EDD1931A03FEE5 /* lang_en.swift in Sources */,
+				107BF9719F1B1EF9DE74FAE1135FDE2D /* lang_es.swift in Sources */,
+				BCAC05B0F670D0ECE1CE54046FF8BC73 /* lang_es_AR.swift in Sources */,
+				B2092ABED309E90F6B8F09550EF3876D /* lang_es_MX.swift in Sources */,
+				7B5123BA7FCE5AD6C84F75C55C3FA918 /* lang_es_PY.swift in Sources */,
+				54E4D5401521675139086FB02C4958B1 /* lang_es_US.swift in Sources */,
+				AFB7EEAAD67B677CB8F275BE44BFBD17 /* lang_et.swift in Sources */,
+				FDF945EE1E3522ADB233F6CAF64B2391 /* lang_eu.swift in Sources */,
+				29FD61F01AD11CCB140715328897CDF5 /* lang_fa.swift in Sources */,
+				C115C18F4BCD989D4D2098103D3156CD /* lang_fi.swift in Sources */,
+				00131F99856A2D79D0452EE6036C40D1 /* lang_fil.swift in Sources */,
+				B146264E2E3943379C9321B12A8BB0DA /* lang_fo.swift in Sources */,
+				C6F366FDDD4032D183909668637E2D56 /* lang_fr.swift in Sources */,
+				158982561653DDAF541A9C44D258FFD1 /* lang_fr_CA.swift in Sources */,
+				136A4C21673C9ACE9B7401C23ACF52D1 /* lang_fur.swift in Sources */,
+				B403F225EDB697CBFBE7205364E05183 /* lang_fy.swift in Sources */,
+				5CD8124149A8C324A26164A540F4603A /* lang_ga.swift in Sources */,
+				87B751BCAFDE5231CC54E94ACFC77C8A /* lang_gd.swift in Sources */,
+				4F0DA51C6DEF5D837E39828E8FA0E160 /* lang_gl.swift in Sources */,
+				74AD0BA97B63D9C8202E6934A00D9D5D /* lang_gu.swift in Sources */,
+				BA535E98E5969F0E6950A9D7962580FC /* lang_he.swift in Sources */,
+				3538AE404A8B8748E1DB683C4D1D2B45 /* lang_hi.swift in Sources */,
+				35ACC0B20A9162BA575A0604FA4FFB6F /* lang_hr.swift in Sources */,
+				2C761347B18E3CC826C766E1029668C5 /* lang_hsb.swift in Sources */,
+				D08DFDB2DA1803DCA08C0080EBEC793E /* lang_hu.swift in Sources */,
+				29C27923BFC8C166D98D50B6534910BE /* lang_hy.swift in Sources */,
+				17D2D7C057B6F8312D6921EBA4903F2C /* lang_id.swift in Sources */,
+				C866ECA4B3F159C8F657E98F80142830 /* lang_is.swift in Sources */,
+				754738B9CDFF7BFA82F5D41B17F6F52C /* lang_it.swift in Sources */,
+				9C8AAB91EC963CA9E5300A4B6DB97B0B /* lang_ja.swift in Sources */,
+				C55DF127B393A1A32A9EBD573B8D3AF7 /* lang_jgo.swift in Sources */,
+				68F506EE1F435874A8DF5695D895D331 /* lang_ka.swift in Sources */,
+				4224624EEE887F7FC0F5F9DA23757D5C /* lang_kea.swift in Sources */,
+				16AA9147E3C6BB79E9BB9A7F95549267 /* lang_kk.swift in Sources */,
+				3584465BE611F4094F04769872103407 /* lang_kl.swift in Sources */,
+				C2739A1918391CB2BDEB1DBB0494CB99 /* lang_km.swift in Sources */,
+				0BA78805650F02BD9B8D7C9EA0959C4D /* lang_kn.swift in Sources */,
+				76E985484A2FB7AE07CE194DC44622FB /* lang_ko.swift in Sources */,
+				CBCFB78B5D88A0F564D9CF2659D4879F /* lang_kok.swift in Sources */,
+				0D79363A590AB56CE55087CC2C261D68 /* lang_ksh.swift in Sources */,
+				545F4CE82A04197EA162250D8C3C8561 /* lang_ky.swift in Sources */,
+				FF80CE3B39ED76D894E1F1C1EE6B38D5 /* lang_lb.swift in Sources */,
+				32DBB3D321469F27C29072F32226BB16 /* lang_lkt.swift in Sources */,
+				BA9C23E618735DBCE816BBF475A440EF /* lang_lo.swift in Sources */,
+				8ABA9BF2B234280F1285BB11D5DFC471 /* lang_lt.swift in Sources */,
+				92362B2B3C8C0FD993583A9DB5DC5089 /* lang_lv.swift in Sources */,
+				606DD8817F0F36780A5D11066F23AF87 /* lang_mk.swift in Sources */,
+				CA5BF51A1D16F6F3072E1A929CC57BF3 /* lang_ml.swift in Sources */,
+				C5DAD023143CC3980281C00083E0341F /* lang_mn.swift in Sources */,
+				DAD59955B713A4BEF91CEC1AC18F03B8 /* lang_mr.swift in Sources */,
+				4659E118C6E8C558842C2B10FA3F5652 /* lang_ms.swift in Sources */,
+				DE35166E822495100128ABBA4090FA61 /* lang_mt.swift in Sources */,
+				1ECB6056A17395DEEB4E84C213DB5BFD /* lang_my.swift in Sources */,
+				E949DB7A7F4492DC52A41362AA0F1F62 /* lang_mzn.swift in Sources */,
+				49132586C23CC7631A141447CF48E397 /* lang_nb.swift in Sources */,
+				B3B9514B47DA071A97C30BE3EFE8701D /* lang_ne.swift in Sources */,
+				94229AF38477B1C3C3C1D20285CF6983 /* lang_nl.swift in Sources */,
+				8E3AD3F90B2FFD68671D47FDBFE4428A /* lang_nn.swift in Sources */,
+				94768B953DD9299EC76A4AB0A6FBFC57 /* lang_or.swift in Sources */,
+				5BD35F867B14CDC698F4FCA31CB729BD /* lang_pa.swift in Sources */,
+				3ADB0459A2F008A686BFAB72BDCBC0E0 /* lang_pl.swift in Sources */,
+				6283739041EC2669DE8A07B519F1713C /* lang_ps.swift in Sources */,
+				E78432B4F544D0AFDD6512C2E9295010 /* lang_pt.swift in Sources */,
+				353157957D48F10C1250A4FE7EE77209 /* lang_ro.swift in Sources */,
+				102436F08C8B73A04473121103923230 /* lang_ru.swift in Sources */,
+				9C2FA128E182061C6A7C4AF85514E05E /* lang_sah.swift in Sources */,
+				338814034E846F154654632C4FF81C1F /* lang_sd.swift in Sources */,
+				198834082E798E5EAA74283D144F08BB /* lang_se.swift in Sources */,
+				44254EDA6CA7372EEEFA251AA24287A5 /* lang_se_FI.swift in Sources */,
+				E616C24262923145B78B822EF0AF1CCF /* lang_si.swift in Sources */,
+				84E889F699A232F5333A80E1F45EC801 /* lang_sk.swift in Sources */,
+				F45DEEFC9E4A189F10ACF96569D3DE71 /* lang_sl.swift in Sources */,
+				2CDA5032F0308D32693699D3C993E88C /* lang_sq.swift in Sources */,
+				70F3DC962BEB07D7BB2EF186BE712831 /* lang_sr.swift in Sources */,
+				0ADFAE2E6D75CE023E1D83948279B45F /* lang_sr_Latn.swift in Sources */,
+				B4FD649F0D1EF46A6761D90880903459 /* lang_sv.swift in Sources */,
+				88947D926A5444D46EAA8CDBC734DDBC /* lang_sw.swift in Sources */,
+				AE9F07D842ACDBE41D5DF1ED0B8D2D95 /* lang_ta.swift in Sources */,
+				15D92786B20F0CF51147324EB1D498E5 /* lang_te.swift in Sources */,
+				7475883787C28400870536650B4AE6D9 /* lang_th.swift in Sources */,
+				D6F46FD4A3E7EB78A3BBDBC0C904AD54 /* lang_ti.swift in Sources */,
+				F7D7D5BBC19BE16086BEF55258055EE6 /* lang_tk.swift in Sources */,
+				307B45C7BD1CE35470E1EE192AE77566 /* lang_to.swift in Sources */,
+				CBDCF44E81AEE5D062EA93B332DBDE09 /* lang_tr.swift in Sources */,
+				87C198AFE746E76173C9974A7CBF809B /* lang_ug.swift in Sources */,
+				6E77B63DE989EED59A7AB72F6BCECC37 /* lang_uk.swift in Sources */,
+				7B888C94C84E1B31871D9750AB4FADF0 /* lang_ur.swift in Sources */,
+				F8933906360A56576C68E586494C85CD /* lang_ur_IN.swift in Sources */,
+				99BF2750CA8F8156E32663BBB453F4D8 /* lang_uz.swift in Sources */,
+				BA14F3913EF40ADF6624284EAE9A1902 /* lang_uz_Cyrl.swift in Sources */,
+				C0BB95113E22F1359297BB9F18A49F31 /* lang_vi.swift in Sources */,
+				3B4D5F77A43595DC2745D591A40325FC /* lang_wae.swift in Sources */,
+				81DC358FD4AA7FC0EBEEC3C66F519A54 /* lang_yi.swift in Sources */,
+				8BAD5089F40894E397E0E2AE26BBDBAD /* lang_yue_Hans.swift in Sources */,
+				E77D7DD39824DA82B68707E5756FC214 /* lang_yue_Hant.swift in Sources */,
+				BC67F282C9981EE3DB02E66074DD2173 /* lang_zh.swift in Sources */,
+				EA5FF0FA2C681C21454E281450EFD8DF /* lang_zh_Hans_HK.swift in Sources */,
+				61DA3645CB854B5D3E1F87476080D9EB /* lang_zh_Hans_MO.swift in Sources */,
+				931650C398800906B43C1CB7808AD819 /* lang_zh_Hans_SG.swift in Sources */,
+				1DA09CF801E9D6F6DFCC67A7E69A6028 /* lang_zh_Hant.swift in Sources */,
+				E111DB5ABE26B78A2901AD03D54DEF1F /* lang_zh_Hant_HK.swift in Sources */,
+				30A530262409691F4184CDC65CBF7696 /* lang_zh_Hant_MO.swift in Sources */,
+				3D82E00A90DCB59D916E84E145A2964D /* lang_zu.swift in Sources */,
+				435EB8C688251CE0BF622614C07AC588 /* Locales.swift in Sources */,
+				34D6BC24C11A7B8CE81257122B696CEB /* Region.swift in Sources */,
+				7B5CD7EE3CDC8C7B47F216EBF3DFA1AB /* RelativeFormatter+Style.swift in Sources */,
+				6D5C212D1EA7BFF41BFC1C9C85411F26 /* RelativeFormatter.swift in Sources */,
+				9A375A44BE228EAF8FD8D26D87C3035C /* String+Parser.swift in Sources */,
+				A686E1EB6469A5E343DB6C888D86B9CD /* SwiftDate-dummy.m in Sources */,
+				8BE77B920E69DA4F60C1DC5389DEE2D3 /* SwiftDate.swift in Sources */,
+				DEE48969F03423C48F5F6B6A12FDE7F5 /* TimeInterval+Formatter.swift in Sources */,
+				6FC02036E250091244CDD437AC310049 /* TimePeriod+Support.swift in Sources */,
+				EA0C86886328721B82E3DEFB4BB24324 /* TimePeriod.swift in Sources */,
+				1283F19D045135E5D0B9683DFD980C80 /* TimePeriodChain.swift in Sources */,
+				07A95BEE5394DE2A669DB4B9693D0F77 /* TimePeriodCollection.swift in Sources */,
+				24CE6383957AD79BCC332B8AA4CE13EC /* TimePeriodGroup.swift in Sources */,
+				6F2CBF664DC531DC30E571690C5C0753 /* TimePeriodProtocol.swift in Sources */,
+				6A5B9E8D0E13E4F65822D398801DA9AA /* Zones.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE7F4790A6A8F58AA3C807B8590AFB6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B7ECAD42D2E0C3614AF85D12A8F9C43 /* Pods-calendar2UITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		49A1CE639AE69BE493688A7D0F242E1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftDate;
+			target = D72DB44A5D594EEE46407AD30CBCF808 /* SwiftDate */;
+			targetProxy = 1AAC06442211A06AFD8915490A48F88C /* PBXContainerItemProxy */;
+		};
+		579FE726BE64836518124518E9CA3F0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-calendar2";
+			target = 9A78545F11A83C5AA8CFEE8407FDB8D2 /* Pods-calendar2 */;
+			targetProxy = C3F83B5E60007CB7C124994898081441 /* PBXContainerItemProxy */;
+		};
+		6A6C39ADBE384808E4477AB466EFD5DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-calendar2";
+			target = 9A78545F11A83C5AA8CFEE8407FDB8D2 /* Pods-calendar2 */;
+			targetProxy = 14103AC2A289C0ACF9103A8D8A9A28AF /* PBXContainerItemProxy */;
+		};
+		AAE3139C731E1CB8269EAB668BDD9F07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JBDatePicker;
+			target = A01A78E1415B1103149D782482AE955F /* JBDatePicker */;
+			targetProxy = 657662D80DC28D4E6261637EE5B1E8B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		199D972A13F2B4C56847F7A89CCA83BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		21334436489F504DADFD0BAC193D7D89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B0778CC000FA2173E10B424E95A13E2 /* Pods-calendar2Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-calendar2Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-calendar2Tests/Pods-calendar2Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2D6BB5C5FA621F97F0F16AB11ABA57C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD1658FE375CA01137B43A92500E2ECB /* SwiftDate.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftDate/SwiftDate-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftDate/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftDate/SwiftDate.modulemap";
+				PRODUCT_MODULE_NAME = SwiftDate;
+				PRODUCT_NAME = SwiftDate;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		33DE649A8C19713F2C1E887511940AA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A6B7735AE8D04B89C5E44B15C720F2A /* Pods-calendar2UITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-calendar2UITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-calendar2UITests/Pods-calendar2UITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		355031CFF89FB83DAF6C678B291F749D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD1658FE375CA01137B43A92500E2ECB /* SwiftDate.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftDate/SwiftDate-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftDate/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftDate/SwiftDate.modulemap";
+				PRODUCT_MODULE_NAME = SwiftDate;
+				PRODUCT_NAME = SwiftDate;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3B4870DD3678758BE39DB45DC3F1CC22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 884A7A57534C8689D002899F1BE8332F /* Pods-calendar2.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-calendar2/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-calendar2/Pods-calendar2.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4637F6C478D7076F2F8C1CDC106BF72F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86162003939B06A21CBE301DE36CE14B /* JBDatePicker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JBDatePicker/JBDatePicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JBDatePicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/JBDatePicker/JBDatePicker.modulemap";
+				PRODUCT_MODULE_NAME = JBDatePicker;
+				PRODUCT_NAME = JBDatePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5336FF1E1853F36DBB92F203FD400560 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86162003939B06A21CBE301DE36CE14B /* JBDatePicker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JBDatePicker/JBDatePicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JBDatePicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/JBDatePicker/JBDatePicker.modulemap";
+				PRODUCT_MODULE_NAME = JBDatePicker;
+				PRODUCT_NAME = JBDatePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DAB230FE3ED26673F176BFA28B28C420 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AC51A7F8BAC87D6C0D056C6B863566B /* Pods-calendar2.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-calendar2/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-calendar2/Pods-calendar2.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E9680BDC88CD79642725B73F837F13E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3961121FE8F9B9F4D99FA0B00C7592A /* Pods-calendar2UITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-calendar2UITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-calendar2UITests/Pods-calendar2UITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FAD80C7EB4877D2C01F728531F9F6598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B569B6FFBF77EB7F7CE32CED2AFB072 /* Pods-calendar2Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-calendar2Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-calendar2Tests/Pods-calendar2Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FDB2FC4A1E5891381CD9D922145497F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01E62E07B0EEE0A2DA703D23C101F948 /* Build configuration list for PBXNativeTarget "Pods-calendar2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAB230FE3ED26673F176BFA28B28C420 /* Debug */,
+				3B4870DD3678758BE39DB45DC3F1CC22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		261E52FAF271ADC787ADEEFA63FFEAFF /* Build configuration list for PBXNativeTarget "Pods-calendar2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33DE649A8C19713F2C1E887511940AA4 /* Debug */,
+				E9680BDC88CD79642725B73F837F13E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A9D506C8322C641E093D86EBC80F07A /* Build configuration list for PBXNativeTarget "Pods-calendar2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21334436489F504DADFD0BAC193D7D89 /* Debug */,
+				FAD80C7EB4877D2C01F728531F9F6598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				199D972A13F2B4C56847F7A89CCA83BC /* Debug */,
+				FDB2FC4A1E5891381CD9D922145497F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFE4B5A2FC6A04717DC43CDD0FC47A8A /* Build configuration list for PBXNativeTarget "SwiftDate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D6BB5C5FA621F97F0F16AB11ABA57C9 /* Debug */,
+				355031CFF89FB83DAF6C678B291F749D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC0822936AF96B1C54E578B7F63AC254 /* Build configuration list for PBXNativeTarget "JBDatePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4637F6C478D7076F2F8C1CDC106BF72F /* Debug */,
+				5336FF1E1853F36DBB92F203FD400560 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

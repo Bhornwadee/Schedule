@@ -1,0 +1,20 @@
+PODS:
+  - JBDatePicker (1.2.5)
+  - SwiftDate (5.0.1)
+
+DEPENDENCIES:
+  - JBDatePicker
+  - SwiftDate
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - JBDatePicker
+    - SwiftDate
+
+SPEC CHECKSUMS:
+  JBDatePicker: 0e791c8a79c49b0d37decea28ba147515bf5cfca
+  SwiftDate: d596c5f65010fb56ad59d54f40ec7aeaa885d01a
+
+PODFILE CHECKSUM: 13afebe2de8c89064b959111e5eb75e1a9d9af5d
+
+COCOAPODS: 1.5.3
