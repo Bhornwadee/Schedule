@@ -36,6 +36,7 @@ class DatePickerViewController: UIViewController, JBDatePickerViewDelegate, UITa
     var showsubject = [Subject]()
     var dateToSelect: Date!
     var todayclass = [Subject]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         plistService.setDefaultloadData()
@@ -45,6 +46,7 @@ class DatePickerViewController: UIViewController, JBDatePickerViewDelegate, UITa
         //print(showsubject.count)
         // Do any additional setup after loading the view, typically from a nib.
         datePickerView.delegate = self
+        
         
         //get presented month
         self.navigationItem.title = datePickerView.presentedMonthView?.monthDescription
@@ -89,6 +91,7 @@ class DatePickerViewController: UIViewController, JBDatePickerViewDelegate, UITa
         //self.performSegue(withIdentifier: "unwindFromDatepicker", sender: self)
         guard let date = dayView.date else {return}
         print("didselect")
+        
         //let deviceLocale = Locale.current.identifier //getเวลาจากเครื่อง
         //let formatter = DateFormatter();
         //formatter.locale = Locale(identifier: deviceLocale)
@@ -148,20 +151,25 @@ class DatePickerViewController: UIViewController, JBDatePickerViewDelegate, UITa
 //                }
 //                else { print("the both are equal") }
 //                print(datestart >= today,today < dateend)
-//                if (datestart >= today || today < dateend)
-//                {
-//                for days in item.dayofweek
-//                {
-//                    if (today.weekdayOrdinal == days)
-//                    {
-//                        //print("found")
-//                        todayclass.append(item)
-//                    }
-//                 }
-//              }
+                
+                //if (datestart >= today || today < dateend)
+                if(today.isInRange(date: datestart, and: dateend))
+                {
+                for days in item.dayofweek
+                {
+                    if (today.weekdayOrdinal == days)
+                    {
+                        //print("found")
+                        todayclass.append(item)
+                        
+                    }
+                 }
+              }
             }
             tableviewsh.reloadData()
         }
+    
+
 
     func didPresentOtherMonth(_ monthView: JBDatePickerMonthView) {
         self.navigationItem.title = datePickerView.presentedMonthView.monthDescription
