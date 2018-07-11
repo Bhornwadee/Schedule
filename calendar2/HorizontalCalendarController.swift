@@ -10,12 +10,13 @@ import UIKit
 import VACalendar
 
 final class HorizontalCalendarController: UIViewController {
-    
+    var plistService = PlistFileService.instance
+    var showevent = [Subject]()
     @IBOutlet weak var monthHeaderView: VAMonthHeaderView! {
         didSet {
             let appereance = VAMonthHeaderViewAppearance(
-                previousButtonImage:#imageLiteral(resourceName: " Messages - Up Arrow-1"),
-                nextButtonImage:#imageLiteral(resourceName: " Messages - Up Arrow-1"),
+                previousButtonImage:UIImage(named: " Messages - Up Arrow-1")! ,
+                nextButtonImage:UIImage(named: " Messages - Up Arrow")!,
                 dateFormat: "LLLL"
             )
             monthHeaderView.delegate = self
@@ -41,7 +42,8 @@ final class HorizontalCalendarController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        plistService.getAllSubject()
+        showevent = plistService.getAllSubject()
         let calendar = VACalendar(calendar: defaultCalendar)
         calendarView = VACalendarView(frame: .zero, calendar: calendar)
         calendarView.showDaysOut = true
@@ -51,15 +53,15 @@ final class HorizontalCalendarController: UIViewController {
         calendarView.monthViewAppearanceDelegate = self
         calendarView.calendarDelegate = self
         calendarView.scrollDirection = .horizontal
-        calendarView.setSupplementaries([
-            (Date().addingTimeInterval(-(60 * 60 * 70)), [VADaySupplementary.bottomDots([.red, .magenta])]),
-            (Date().addingTimeInterval((60 * 60 * 110)), [VADaySupplementary.bottomDots([.red])]),
-            (Date().addingTimeInterval((60 * 60 * 370)), [VADaySupplementary.bottomDots([.blue, .darkGray])]),
-            (Date().addingTimeInterval((60 * 60 * 430)), [VADaySupplementary.bottomDots([.orange, .purple, .cyan])])
-            ])//dot in date
+//        calendarView.setSupplementaries([
+//            (Date().addingTimeInterval(-(60 * 60 * 70)), [VADaySupplementary.bottomDots([.red, .magenta])]),
+//            (Date().addingTimeInterval((60 * 60 * 110)), [VADaySupplementary.bottomDots([.red])]),
+//            (Date().addingTimeInterval((60 * 60 * 370)), [VADaySupplementary.bottomDots([.blue, .darkGray])]),
+//            (Date().addingTimeInterval((60 * 60 * 430)), [VADaySupplementary.bottomDots([.orange, .purple, .cyan])])
+//            ])//dot in date
         view.addSubview(calendarView)
     }
-    
+
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
@@ -72,12 +74,36 @@ final class HorizontalCalendarController: UIViewController {
             )
             calendarView.setup()
         }
+        
     }
     
-    @IBAction func changeMode(_ sender: Any) {
-        calendarView.changeViewType()
+    @IBAction func changeMode(_ sender: Any)
+    {
+//        calendarView.changeViewType()
+        
     }
     
+    func getevent(today: Date)
+    {
+        for item in showevent
+        {
+            guard let datestart = item.date, let dateend = item.dateend, let subjectn = item.subjectName else {return}
+            
+            //print(datestart,dateend,subjectn)
+            
+            if(today.isInRange(date: datestart , and: dateend))
+            {
+                for days in item.dayofweek
+                {
+                    if (today.weekdayOrdinal == days)
+                    {
+                        //print("found")
+                        calendarView.setSupplementaries([(today, [VADaySupplementary.bottomDots([UIColor.blue,.red])])])
+                    }
+                }
+            }
+        }
+    }
 }
 
 extension HorizontalCalendarController: VAMonthHeaderViewDelegate {
@@ -89,7 +115,6 @@ extension HorizontalCalendarController: VAMonthHeaderViewDelegate {
     func didTapPreviousMonth() {
         calendarView.previousMonth()
     }
-    
 }
 
 extension HorizontalCalendarController: VAMonthViewAppearanceDelegate {
@@ -113,7 +138,6 @@ extension HorizontalCalendarController: VAMonthViewAppearanceDelegate {
     func verticalCurrentMonthTitleColor() -> UIColor {
         return .red
     }
-    
 }
 
 extension HorizontalCalendarController: VADayViewAppearanceDelegate {
@@ -152,14 +176,16 @@ extension HorizontalCalendarController: VADayViewAppearanceDelegate {
             return -7
         }
     }
-    
 }
 
 extension HorizontalCalendarController: VACalendarViewDelegate {
     
     func selectedDates(_ dates: [Date]) {
-        calendarView.startDate = dates.last ?? Date()
-        print(dates)
+        //calendarView.startDate = dates.last ?? Date()
+        guard let dateselect = dates.last else {return}
+        //calendarView.setSupplementaries([(dateselect, [VADaySupplementary.bottomDots([UIColor.blue,.white,.red])])])
+        print(dateselect)
+        getevent(today: dateselect)
     }
     
 }

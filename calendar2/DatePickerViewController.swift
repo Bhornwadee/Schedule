@@ -122,6 +122,7 @@ class DatePickerViewController: UIViewController, JBDatePickerViewDelegate, UITa
 //        // print(todayclass)
 //        tableviewsh.reloadData()
 //    }
+        
 
         func filtertodayclass(today:Date)
         {
@@ -161,7 +162,6 @@ class DatePickerViewController: UIViewController, JBDatePickerViewDelegate, UITa
                     {
                         //print("found")
                         todayclass.append(item)
-                        
                     }
                  }
               }
@@ -206,7 +206,6 @@ class DatePickerViewController: UIViewController, JBDatePickerViewDelegate, UITa
         return 0.1
     }
     
-
     @IBAction func loadNextMonth(_ sender: UIBarButtonItem) {
         datePickerView.loadNextView()
     }

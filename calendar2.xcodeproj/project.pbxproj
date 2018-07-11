@@ -12,12 +12,13 @@
 		87091946F8AC774FB13E8AE4 /* Pods_calendar2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2954D37BA97E687CAAF812 /* Pods_calendar2Tests.framework */; };
 		CA289A2720F3159200C75E09 /* checkboxx.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA289A2620F3159200C75E09 /* checkboxx.swift */; };
 		CA289A5320F598E400C75E09 /* HorizontalCalendarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA289A5220F598E400C75E09 /* HorizontalCalendarController.swift */; };
+		CA289A5520F5D57200C75E09 /* Eventcalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA289A5420F5D57200C75E09 /* Eventcalendar.swift */; };
+		CA289A5720F6058C00C75E09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA289A5620F6058C00C75E09 /* Assets.xcassets */; };
 		CA2BE0CE20EB1EBA0079F9A2 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2BE0CD20EB1EBA0079F9A2 /* MyCollectionViewCell.swift */; };
 		CA2BE0D020EB1EF10079F9A2 /* colorcollectionview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2BE0CF20EB1EF10079F9A2 /* colorcollectionview.swift */; };
 		CA350C6C20DCDBCE00366D78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA350C6B20DCDBCE00366D78 /* AppDelegate.swift */; };
 		CA350C6E20DCDBCE00366D78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA350C6D20DCDBCE00366D78 /* ViewController.swift */; };
 		CA350C7120DCDBCE00366D78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA350C6F20DCDBCE00366D78 /* Main.storyboard */; };
-		CA350C7320DCDBD100366D78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA350C7220DCDBD100366D78 /* Assets.xcassets */; };
 		CA350C7620DCDBD100366D78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA350C7420DCDBD100366D78 /* LaunchScreen.storyboard */; };
 		CA350C8120DCDBD100366D78 /* calendar2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA350C8020DCDBD100366D78 /* calendar2Tests.swift */; };
 		CA350C8C20DCDBD100366D78 /* calendar2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA350C8B20DCDBD100366D78 /* calendar2UITests.swift */; };
@@ -68,13 +69,14 @@
 		AB834C6CF2DDDA464B58F8CD /* Pods-calendar2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-calendar2Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-calendar2Tests/Pods-calendar2Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CA289A2620F3159200C75E09 /* checkboxx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkboxx.swift; sourceTree = "<group>"; };
 		CA289A5220F598E400C75E09 /* HorizontalCalendarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalCalendarController.swift; sourceTree = "<group>"; };
+		CA289A5420F5D57200C75E09 /* Eventcalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eventcalendar.swift; sourceTree = "<group>"; };
+		CA289A5620F6058C00C75E09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA2BE0CD20EB1EBA0079F9A2 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		CA2BE0CF20EB1EF10079F9A2 /* colorcollectionview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colorcollectionview.swift; sourceTree = "<group>"; };
 		CA350C6820DCDBCE00366D78 /* calendar2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = calendar2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA350C6B20DCDBCE00366D78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA350C6D20DCDBCE00366D78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CA350C7020DCDBCE00366D78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CA350C7220DCDBD100366D78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA350C7520DCDBD100366D78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA350C7720DCDBD100366D78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA350C7C20DCDBD100366D78 /* calendar2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = calendar2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -184,6 +186,7 @@
 				CA350C6B20DCDBCE00366D78 /* AppDelegate.swift */,
 				CA350C6D20DCDBCE00366D78 /* ViewController.swift */,
 				CA350C9920DCDF2400366D78 /* DatePickerViewController.swift */,
+				CA289A5420F5D57200C75E09 /* Eventcalendar.swift */,
 				CA289A5220F598E400C75E09 /* HorizontalCalendarController.swift */,
 				CA92CEC720E9D6B300DC3665 /* tableviewcustomcell.swift */,
 				CA350C9B20DCDF8600366D78 /* StartViewController.swift */,
@@ -198,10 +201,10 @@
 				CA73A87C20E1EF2800E2F53C /* AddClass.swift */,
 				CA78F81720E6153600BA0028 /* Detailclass.swift */,
 				CA350CA920DCFD4E00366D78 /* Showdatafromplistcourse.swift */,
+				CA289A5620F6058C00C75E09 /* Assets.xcassets */,
 				CA350C9F20DCF27300366D78 /* Termclass.swift */,
 				CA350CA120DCF40E00366D78 /* AddCourse.swift */,
 				CA289A2620F3159200C75E09 /* checkboxx.swift */,
-				CA350C7220DCDBD100366D78 /* Assets.xcassets */,
 				CA350C7420DCDBD100366D78 /* LaunchScreen.storyboard */,
 				CA350C7720DCDBD100366D78 /* Info.plist */,
 			);
@@ -361,8 +364,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA350C7620DCDBD100366D78 /* LaunchScreen.storyboard in Resources */,
-				CA350C7320DCDBD100366D78 /* Assets.xcassets in Resources */,
 				CA73A88120E347E000E2F53C /* myData.plist in Resources */,
+				CA289A5720F6058C00C75E09 /* Assets.xcassets in Resources */,
 				CA350C7120DCDBCE00366D78 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -478,6 +481,7 @@
 				CA73A87220E0D5EE00E2F53C /* customTableViewCell2.swift in Sources */,
 				CAAA220B20EC7413008C7894 /* MainTabController.swift in Sources */,
 				CA350CAA20DCFD4E00366D78 /* Showdatafromplistcourse.swift in Sources */,
+				CA289A5520F5D57200C75E09 /* Eventcalendar.swift in Sources */,
 				CA73A87D20E1EF2800E2F53C /* AddClass.swift in Sources */,
 				CA350C9C20DCDF8600366D78 /* StartViewController.swift in Sources */,
 				CA350CA220DCF40E00366D78 /* AddCourse.swift in Sources */,
