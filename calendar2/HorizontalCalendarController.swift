@@ -54,8 +54,8 @@ final class HorizontalCalendarController: UIViewController {
         calendarView.calendarDelegate = self
         calendarView.scrollDirection = .horizontal
         
-        let dot:(Date,[VADaySupplementary])
-        let dots = [dot]
+//        let dot:(Date,[VADaySupplementary])
+//        let dots = [dot]
         
         for subject in showevent
         {
@@ -63,20 +63,20 @@ final class HorizontalCalendarController: UIViewController {
             //calendarView.setSupplementaries([(date, [VADaySupplementary.bottomDots([UIColor.green])])])
             //calendarView.setSupplementaries([(dateend, [VADaySupplementary.bottomDots([UIColor.red])])])
             
-//                let calendar2 = Calendar.current
-//                while date < dateend {
-//                    date = calendar2.date(byAdding: .day, value: 1, to: date)!
-//                    for days in subject.dayofweek
-//                    {
-//                        print(days,subject.subjectName)
-//                        print("-----")
-////                        if (date.weekdayOrdinal == days)
-////                        {
-////                            print(subject.subjectName)
-////                            calendarView.setSupplementaries([(date, [VADaySupplementary.bottomDots([UIColor(red:0.27, green:0.66, blue:0.67, alpha:1.0)])])])
-////                        }
-//                    }
-//                }
+                let calendar2 = Calendar.current
+                while date < dateend {
+                    date = calendar2.date(byAdding: .day, value: 1, to: date)!
+                    for days in subject.dayofweek
+                    {
+                        print(days,subject.subjectName)
+                        print("-----")
+                        if (date.weekdayOrdinal == days)
+                        {
+                            print(subject.subjectName)
+                            calendarView.setSupplementaries([(date, [VADaySupplementary.bottomDots([UIColor(red:0.27, green:0.66, blue:0.67, alpha:1.0)])])])
+                        }
+                    }
+                }
             
             
         }
