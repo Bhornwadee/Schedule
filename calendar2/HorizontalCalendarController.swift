@@ -53,6 +53,59 @@ final class HorizontalCalendarController: UIViewController {
         calendarView.monthViewAppearanceDelegate = self
         calendarView.calendarDelegate = self
         calendarView.scrollDirection = .horizontal
+        
+        let dot:(Date,[VADaySupplementary])
+        let dots = [dot]
+        
+        for subject in showevent
+        {
+            guard var date = subject.date , let dateend = subject.dateend  else {return}
+            //calendarView.setSupplementaries([(date, [VADaySupplementary.bottomDots([UIColor.green])])])
+            //calendarView.setSupplementaries([(dateend, [VADaySupplementary.bottomDots([UIColor.red])])])
+            
+//                let calendar2 = Calendar.current
+//                while date < dateend {
+//                    date = calendar2.date(byAdding: .day, value: 1, to: date)!
+//                    for days in subject.dayofweek
+//                    {
+//                        print(days,subject.subjectName)
+//                        print("-----")
+////                        if (date.weekdayOrdinal == days)
+////                        {
+////                            print(subject.subjectName)
+////                            calendarView.setSupplementaries([(date, [VADaySupplementary.bottomDots([UIColor(red:0.27, green:0.66, blue:0.67, alpha:1.0)])])])
+////                        }
+//                    }
+//                }
+            
+            
+        }
+        
+//        let date2 = Date()
+//        let calendar2 = Calendar.current
+//        let hour2 = calendar2.component(.hour, from: date2)
+//        let minutes2 = calendar2.component(.minute, from: date2)
+//        for itemsubject in showevent
+//        {
+//            guard let datestart = itemsubject.date, let dateend = itemsubject.dateend, let subjectn = itemsubject.subjectName else {return}
+//            if(date2.isInRange(date: datestart , and: dateend))
+//            {
+//                calendarView.setSupplementaries([(date2, [VADaySupplementary.bottomDots([UIColor.magenta,.purple])])])
+////                for days in itemsubject.dayofweek
+////                {
+////                    if (date2.weekdayOrdinal == days)
+////                    {
+////                        //var subcount = subjectn.count
+////                        print(subjectn)
+////                        calendarView.setSupplementaries([(date2, [VADaySupplementary.bottomDots([UIColor.magenta,.purple])])])
+////                    }
+////                }
+//            }
+//        }
+        
+        //กำหนดค่าtoday -> ^ up
+        
+        //show dot color and given date
 //        calendarView.setSupplementaries([
 //            (Date().addingTimeInterval(-(60 * 60 * 70)), [VADaySupplementary.bottomDots([.red, .magenta])]),
 //            (Date().addingTimeInterval((60 * 60 * 110)), [VADaySupplementary.bottomDots([.red])]),
@@ -83,27 +136,47 @@ final class HorizontalCalendarController: UIViewController {
         
     }
     
-    func getevent(today: Date)
-    {
-        for item in showevent
-        {
-            guard let datestart = item.date, let dateend = item.dateend, let subjectn = item.subjectName else {return}
-            
-            //print(datestart,dateend,subjectn)
-            
-            if(today.isInRange(date: datestart , and: dateend))
-            {
-                for days in item.dayofweek
-                {
-                    if (today.weekdayOrdinal == days)
-                    {
-                        //print("found")
-                        calendarView.setSupplementaries([(today, [VADaySupplementary.bottomDots([UIColor.blue,.red])])])
-                    }
-                }
-            }
-        }
-    }
+//    func getsubjectday(today: Date)
+//    {
+//        for itemsubject in showevent
+//        {
+//            guard let datestart = itemsubject.date, let dateend = itemsubject.dateend, let subjectn = itemsubject.subjectName else {return}
+//             if(today.isInRange(date: datestart , and: dateend))
+//             {
+//                for days in itemsubject.dayofweek
+//                {
+//                    if (today.weekdayOrdinal == days)
+//                    {
+//                        //var subcount = subjectn.count
+//
+//                        print(subjectn)
+//                    }
+//                }
+//             }
+//        }
+//    }
+    
+//    func getevent(today: Date)
+//    {
+//        for item in showevent
+//        {
+//            guard let datestart = item.date, let dateend = item.dateend, let subjectn = item.subjectName else {return}
+//
+//            //print(datestart,dateend,subjectn)
+//
+//            if(today.isInRange(date: datestart , and: dateend))
+//            {
+//                for days in item.dayofweek
+//                {
+//                    if (today.weekdayOrdinal == days)
+//                    {
+//                        //print("found")
+//                        calendarView.setSupplementaries([(today, [VADaySupplementary.bottomDots([UIColor.blue,.red])])])
+//                    }
+//                }
+//            }
+//        }
+//    }
 }
 
 extension HorizontalCalendarController: VAMonthHeaderViewDelegate {
@@ -185,7 +258,8 @@ extension HorizontalCalendarController: VACalendarViewDelegate {
         guard let dateselect = dates.last else {return}
         //calendarView.setSupplementaries([(dateselect, [VADaySupplementary.bottomDots([UIColor.blue,.white,.red])])])
         print(dateselect)
-        getevent(today: dateselect)
+        //getsubjectday(today: dateselect)
+        //getevent(today: dateselect)
     }
     
 }
