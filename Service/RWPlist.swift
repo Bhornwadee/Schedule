@@ -53,7 +53,7 @@ class PlistFileService {
             dictionary["date"] = subject.date as AnyObject
             dictionary["dateend"] = subject.dateend as AnyObject
             dictionary["colorimage"] = subject.colorimage as AnyObject
-             dictionary["dayofweek"] = subject.dayofweek as AnyObject
+            dictionary["dayofweek"] = subject.dayofweek as AnyObject
 //            dictionary["classType"] = subject.classType as AnyObject //5
 //            dictionary["timeStart"] = subject.timeStart as AnyObject
 //            dictionary["timeEnd"] = subject.timeEnd as AnyObject
@@ -86,6 +86,7 @@ class PlistFileService {
             dictionary["date"] = subject.date as AnyObject
             dictionary["dateend"] = subject.dateend as AnyObject
             dictionary["colorimage"] = subject.colorimage as AnyObject
+            dictionary["dayofweek"] = subject.dayofweek as AnyObject
             saveData.add(dictionary)
         }
         let success = saveData.write(toFile: filepath, atomically: true)
@@ -94,7 +95,7 @@ class PlistFileService {
         
     }
     
-    func editdata(id:String,subjectName:String,date:Date,colorimage:String)
+    func editdata(id:String,subjectName:String,date:Date,dateend:Date,colorimage:String,dayofweek:[Int])
     {
         if let index = semesters.index(where: { $0.id == id })
         {
@@ -103,7 +104,9 @@ class PlistFileService {
             print("new name.\(subjectName)")
             subject.subjectName = subjectName
             subject.date = date
+            subject.dateend = dateend
             subject.colorimage = colorimage
+            subject.dayofweek = dayofweek
             
         }
         let filepath = applicationDocumentsDirectory().appending("/\(plistFileName).plist")
@@ -114,6 +117,7 @@ class PlistFileService {
             dictionary["date"] = subject.date as AnyObject
             dictionary["dateend"] = subject.dateend as AnyObject
             dictionary["colorimage"] = subject.colorimage as AnyObject
+            dictionary["dayofweek"] = subject.dayofweek as AnyObject
             saveData.add(dictionary)
         }
         let success = saveData.write(toFile: filepath, atomically: true)

@@ -12,27 +12,47 @@ class Course: UIViewController , ColorcollectionviewDelegate{
      var plistService = PlistFileService.instance
     @IBOutlet weak var Coursename: UITextField!
     @IBOutlet weak var coursecolors: UIImageView!
-    @IBOutlet weak var coursedate: UILabel!
-    @IBOutlet weak var DMYclasseditpicker: UIDatePicker!
+    @IBOutlet weak var coursedatestart: UILabel!
+    @IBOutlet weak var coursedateend: UILabel!
+    @IBOutlet weak var DMYclasseditpicker1: UIDatePicker!
+    @IBOutlet weak var DMYclasseditpicker2: UIDatePicker!
+     var checkmark = [Subject]()
     var subject:Subject?
     var editbool:Bool = false
     var ccolor:String?
     var psubjectname:String?
     
     var pdate:Date? //เก็บใน plist
-    var date1:Date? //ค่าเดิม
+    var pdateend:Date? //เก็บใน plist stop
+    var date1:Date? //ค่าเดิมstart
     var date2:Date? //ค่าใหม่
+    var date4:Date? //ค่าเดิมstop
+    var date3:Date? //ค่าใหม่วันสุดท้าย
     
     var colorch:String? //รับสีเดิมกรiีไม่เปลียนสี
     var colorpic:String? //รับสีจากการเลือกสรใหม่
     var pcolorcourse:String?//ดึงไปเก็บในplist
+    
+    let checkbox = Checkbox(frame: CGRect(x: 50, y: 50, width: 25, height: 25))
+    var tickBoxmon:Checkbox!
+    var tickBoxtue:Checkbox!
+    var tickBoxwed:Checkbox!
+    var tickBoxthu:Checkbox!
+    var tickBoxfri:Checkbox!
+    var tickBoxsat:Checkbox!
+    var tickBoxsun:Checkbox!
     //var coursepic = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        DMYclasseditpicker.addTarget(self, action: #selector(self.dmyclassedit(sender:)), for: UIControlEvents.valueChanged)
+        DMYclasseditpicker1.isHidden = true
+        DMYclasseditpicker2.isHidden = true
+        DMYclasseditpicker1.addTarget(self, action: #selector(self.dmyclassedit1(sender:)), for: UIControlEvents.valueChanged)
+        DMYclasseditpicker2.addTarget(self, action: #selector(self.dmyclassedit2(sender:)), for: UIControlEvents.valueChanged)
+        addCheckboxSubviews()
         guard let ccolor = ccolor else {return}
         coursecolors.image = UIImage(named: ccolor)
+        
        
     }
     override func viewWillAppear(_ animated: Bool)
@@ -43,7 +63,7 @@ class Course: UIViewController , ColorcollectionviewDelegate{
         if editbool == false
         {
             //print(subject)
-            guard let subjectname = subject?.subjectName , let datecourse = subject?.date , let coursecolor = subject?.colorimage else {return}
+            guard let subjectname = subject?.subjectName , let datecourse = subject?.date, let datecourseend = subject?.dateend , let coursecolor = subject?.colorimage else {return}
             let deviceLocale = Locale.current.identifier //getเวลาจากเครื่อง
                 let formatter = DateFormatter();
                 formatter.locale = Locale(identifier: deviceLocale)
@@ -51,17 +71,24 @@ class Course: UIViewController , ColorcollectionviewDelegate{
                 let datecc = formatter.string(from: datecourse)
                 //date to string
             
+                let formatter4 = DateFormatter();
+                formatter4.locale = Locale(identifier: deviceLocale)
+                formatter4.dateFormat = "dd-MM-yyyy"; //format dmy
+                let dateee = formatter4.string(from: datecourseend)
+            //date to string
+            
 //            let dateFormatter = DateFormatter()
 //            dateFormatter.dateFormat = "dd-mm-yyyy" //Your date format
 //            dateFormatter.timeZone = TimeZone(abbreviation: "UTC+7") //Current time zone
 //            let dateedit = dateFormatter.date(from: datecc) //according to date format your date string
 //            print(dateedit ?? "") //Convert String to Date
 //            print(datecc)
-            
-            
+            showcheckmark()
+            date4 = datecourseend
             date1 = datecourse
             Coursename.text = subjectname
-            coursedate.text = datecc
+            coursedatestart.text = datecc
+            coursedateend.text = dateee
            self.coursecolors.image = UIImage(named: coursecolor)
             colorch = coursecolor
             editbool = true
@@ -77,17 +104,6 @@ class Course: UIViewController , ColorcollectionviewDelegate{
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    
-    @objc func dmyclassedit(sender: UIDatePicker)
-    {
-        let dateformat2 = DateFormatter()
-        dateformat2.dateStyle = DateFormatter.Style.medium
-        dateformat2.timeStyle = DateFormatter.Style.none
-        let strDate2 = dateformat2.string(from: DMYclasseditpicker.date)
-        coursedate.text = strDate2
-        date2 = DMYclasseditpicker.date
     }
     
     @IBAction func editbtn(_ sender: UIButton)
@@ -127,14 +143,162 @@ class Course: UIViewController , ColorcollectionviewDelegate{
         {
             pdate = date1
         }
+        //Check dateend
+        if (date3 != nil)
+        {
+            if (date3 != date4)
+            {
+                pdateend = date3
+            }
+            else
+            {
+                pdateend = date4
+            }
+        }
+        else
+        {
+            pdateend = date4
+        }
+
         print(psubjectname)
         print(pdate)
         print(pcolorcourse)
 //        print("print \(date1)")
 //        print("print \(date2)")
         print(subject?.id)
-        guard let id = subject?.id, let psubjectname = psubjectname , let pdate = pdate ,let pcolorcourse = pcolorcourse else{return}
-        plistService.editdata(id: id,subjectName: psubjectname, date: pdate, colorimage: pcolorcourse)
+        guard let id = subject?.id, let psubjectname = psubjectname , let pdate = pdate, let pdateend  = pdateend ,let pcolorcourse = pcolorcourse else{return}
+        let day = selectday()
+        print(day)
+        //plistService.editdata(id: id,subjectName: psubjectname, date: pdate, dateend: pdateend ,colorimage: pcolorcourse, dayofweek: day)
+    }
+    
+    
+    @IBAction func dmystart_btn(_ sender: UIButton)
+    {
+        if  DMYclasseditpicker1.isHidden
+        {
+            DMYclasseditpicker1.isHidden = false
+            DMYclasseditpicker2.isHidden = true
+        }
+    }
+    
+    @objc func dmyclassedit1(sender: UIDatePicker)
+    {
+        let dateformat2 = DateFormatter()
+        dateformat2.dateStyle = DateFormatter.Style.short
+        dateformat2.timeStyle = DateFormatter.Style.none
+        let strDate = dateformat2.string(from: DMYclasseditpicker1.date)
+        coursedatestart.text = strDate
+        date2 = DMYclasseditpicker1.date
+    }
+    @IBAction func dmyend_btn(_ sender: UIButton)
+    {
+        if  DMYclasseditpicker2.isHidden
+        {
+            DMYclasseditpicker2.isHidden = false
+            DMYclasseditpicker1.isHidden = true
+        }
+    }
+    
+    @objc func dmyclassedit2(sender: UIDatePicker)
+    {
+        let dateformat3 = DateFormatter()
+        dateformat3.dateStyle = DateFormatter.Style.short
+        dateformat3.timeStyle = DateFormatter.Style.none
+        let stpDate = dateformat3.string(from: DMYclasseditpicker2.date)
+        coursedateend.text = stpDate
+        //print("stpdate : .\(stpDate)")
+        date3 = DMYclasseditpicker2.date
+    }
+    
+    func showcheckmark()
+    {
+        for itemcheck in checkmark
+        {
+            print(itemcheck.dayofweek.count)
+        }
+    }
+    
+    func addCheckboxSubviews() {
+        
+        // tick
+        tickBoxmon = Checkbox(frame: CGRect(x: 162, y: 370, width: 25, height: 25))
+        tickBoxmon.borderStyle = .square
+        tickBoxmon.checkmarkStyle = .tick
+        tickBoxmon.checkmarkSize = 0.7
+        //tickBoxmon.tag = 1 //id
+        view.addSubview(tickBoxmon!)
+        
+        tickBoxtue = Checkbox(frame: CGRect(x: 199, y: 370, width: 25, height: 25))
+        tickBoxtue.borderStyle = .square
+        tickBoxtue.checkmarkStyle = .tick
+        tickBoxtue.checkmarkSize = 0.7
+        view.addSubview(tickBoxtue!)
+        
+        tickBoxwed = Checkbox(frame: CGRect(x: 237, y: 370, width: 25, height: 25))
+        tickBoxwed.borderStyle = .square
+        tickBoxwed.checkmarkStyle = .tick
+        tickBoxwed.checkmarkSize = 0.7
+        view.addSubview(tickBoxwed)
+        
+        tickBoxthu = Checkbox(frame: CGRect(x: 275, y: 370, width: 25, height: 25))
+        tickBoxthu.borderStyle = .square
+        tickBoxthu.checkmarkStyle = .tick
+        tickBoxthu.checkmarkSize = 0.7
+        view.addSubview(tickBoxthu)
+        
+        tickBoxfri = Checkbox(frame: CGRect(x: 314, y: 370, width: 25, height: 25))
+        tickBoxfri.borderStyle = .square
+        tickBoxfri.checkmarkStyle = .tick
+        tickBoxfri.checkmarkSize = 0.7
+        view.addSubview(tickBoxfri)
+        
+        tickBoxsat = Checkbox(frame: CGRect(x: 354, y: 370, width: 25, height: 25))
+        tickBoxsat.borderStyle = .square
+        tickBoxsat.checkmarkStyle = .tick
+        tickBoxsat.checkmarkSize = 0.7
+        view.addSubview(tickBoxsat)
+        
+        tickBoxsun = Checkbox(frame: CGRect(x: 125, y: 370, width: 25, height: 25))
+        tickBoxsun.borderStyle = .square
+        tickBoxsun.checkmarkStyle = .tick
+        tickBoxsun.checkmarkSize = 0.7
+        view.addSubview(tickBoxsun)
+        
+    }
+    
+    func selectday() -> [Int]
+    {
+        var days = [Int]()
+        if tickBoxsun.isChecked == true
+        {
+            days.append(1)
+        }
+        if tickBoxmon.isChecked == true
+        {
+            days.append(2)
+        }
+        if tickBoxtue.isChecked == true
+        {
+            days.append(3)
+        }
+        if tickBoxwed.isChecked == true
+        {
+            days.append(4)
+        }
+        if tickBoxthu.isChecked == true
+        {
+            days.append(5)
+        }
+        if tickBoxfri.isChecked == true
+        {
+            days.append(6)
+        }
+        if tickBoxsat.isChecked == true
+        {
+            days.append(7)
+        }
+        return days
     }
     
     @IBAction func Choosecolor_edit(_ sender: UIButton)
