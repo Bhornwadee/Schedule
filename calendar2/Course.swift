@@ -77,12 +77,36 @@ class Course: UIViewController , ColorcollectionviewDelegate{
                 let dateee = formatter4.string(from: datecourseend)
             //date to string
             
-//            let dateFormatter = DateFormatter()
-//            dateFormatter.dateFormat = "dd-mm-yyyy" //Your date format
-//            dateFormatter.timeZone = TimeZone(abbreviation: "UTC+7") //Current time zone
-//            let dateedit = dateFormatter.date(from: datecc) //according to date format your date string
-//            print(dateedit ?? "") //Convert String to Date
-//            print(datecc)
+            
+            for selectday in (subject?.dayofweek)!
+            {
+                //print(selectday)
+                switch selectday{
+                case 1:
+                    print("Sunday")
+                    tickBoxsun.isChecked = true
+                case 2:
+                    print("Monday")
+                    tickBoxmon.isChecked = true
+                case 3:
+                    print("Tuesday")
+                    tickBoxtue.isChecked = true
+                case 4:
+                    print("Wednesday")
+                    tickBoxwed.isChecked = true
+                case 5:
+                    print("Thursday")
+                    tickBoxthu.isChecked = true
+                case 6:
+                    print("Friday")
+                    tickBoxfri.isChecked = true
+                case 7:
+                    print("Saturday")
+                    tickBoxsat.isChecked = true
+                default:
+                    print("day")
+                }
+            }
             showcheckmark()
             date4 = datecourseend
             date1 = datecourse
@@ -169,7 +193,7 @@ class Course: UIViewController , ColorcollectionviewDelegate{
         guard let id = subject?.id, let psubjectname = psubjectname , let pdate = pdate, let pdateend  = pdateend ,let pcolorcourse = pcolorcourse else{return}
         let day = selectday()
         print(day)
-        //plistService.editdata(id: id,subjectName: psubjectname, date: pdate, dateend: pdateend ,colorimage: pcolorcourse, dayofweek: day)
+        plistService.editdata(id: id,subjectName: psubjectname, date: pdate, dateend: pdateend ,colorimage: pcolorcourse, dayofweek: day)
     }
     
     
@@ -316,32 +340,6 @@ class Course: UIViewController , ColorcollectionviewDelegate{
         //self.coursedate.text = picture
         
     }
-    
-    
-//    func editchangecolor(subject:Subject)
-//    {
-////        print(subject.subjectName,subject.date,subject.colorimage)
-//        //set ค่า แทน viewappear
-//        self.subject = subject
-//        guard let subnamecourse = self.subject?.subjectName , let datecourse = self.subject?.date , let ccolor = self.subject?.colorimage  else {return}
-//        print(subnamecourse,datecourse,ccolor)
-////        let deviceLocale = Locale.current.identifier //getเวลาจากเครื่อง
-////        let formatter = DateFormatter();
-////        formatter.locale = Locale(identifier: deviceLocale)
-////        formatter.dateFormat = "dd-MM-yyyy"; //format dmy
-////        let datecc = formatter.string(from: datecourse)
-//        //date to string
-//
-////        print(self.Coursename)
-//        //self.Coursename.text = "subnamecourse"
-////        self.coursedate.text = datecc
-////        coursecolor.image = UIImage(named: ccolor)
-////                print(subject.subjectName)
-////                print(subject.date)
-////                print(subject.colorimage)
-//        print("Viewwillappear working")
-//
-//    }
     
     /*
     // MARK: - Navigation

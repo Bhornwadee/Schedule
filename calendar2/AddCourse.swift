@@ -79,28 +79,9 @@ class AddCourse: UIViewController , ColorcollectionviewDelegate {
         guard  let text = NameCourse.text else { return }
         let date1 = DMYClasspickerstart.date
         let date2 = DMYClasspickerend.date
-//        let dateFormatter = DateFormatter()
-//        dateFormatter.dateFormat = "mm-dd-yyyy" //Your date format
-//        dateFormatter.timeZone = TimeZone(abbreviation: "GMT+0:00") //Current time zone
-//        guard let datee = dateFormatter.date(from: DMYClass.text!) else{return}//according to date format your date string
-//        print(datee ?? "") //Convert String to Date
-//        plistService.addSubject(subjectName: text, date: datee, classType: "" ,timeStart: "",timeEnd: "",howoftenclass: "",dateStart: "",dateEnd: "",location: "",instructor: "")
-//        print("\(text) + \(datee)")
-       // let succeed = (favoriteGooglelocations as NSDictionary).writeToFile(path, atomically: true)
-    
-        //let subject = Subject(subjectName: text,date: DMYClasspicker.date,colorimage:picname)
-        
-
-        //print(Days)
-        //print(tickBoxmon.isChecked,tickBoxtue.isChecked,tickBoxwed.isChecked,tickBoxthu.isChecked,tickBoxfri.isChecked,tickBoxsat.isChecked,tickBoxsun.isChecked)
-        
-            //print(Days)
-        //print(Days.count)
         let day = selectday()
         print(day)
       plistService.addSubject(subjectName: text, date: DMYClasspickerstart.date, dateend: DMYClasspickerend.date ,colorimage: picname,dayofweek: day)
-       
-         //print(plistService.loadDataFromPlist().count)
     }
     
     @IBAction func choosecolor_btn(_ sender: UIButton)
@@ -111,19 +92,10 @@ class AddCourse: UIViewController , ColorcollectionviewDelegate {
     }
     func changeBackgroundColor(picture: String)
     {
-//        let myColor : UIColor = UIColor( red: 0.5, green: 0.5, blue:0, alpha: 1.0 )
-//        colorimage.layer.borderWidth = 2
-//        colorimage.layer.borderColor = myColor.cgColor
         colorimage.image = UIImage(named: picture)
         picname = picture
     }
-    
-//    @IBAction func ReadCourse_Btn(_ sender: UIButton)
-//    {
-//        plistService.getAllSubject()
-//        print(plistService.getAllSubject())
-//    } //ปุ่มread
-    
+
     func addCheckboxSubviews() {
         
         // tick
@@ -131,7 +103,6 @@ class AddCourse: UIViewController , ColorcollectionviewDelegate {
         tickBoxmon.borderStyle = .square
         tickBoxmon.checkmarkStyle = .tick
         tickBoxmon.checkmarkSize = 0.7
-        //tickBoxmon.tag = 1 //id
         view.addSubview(tickBoxmon!)
         
         tickBoxtue = Checkbox(frame: CGRect(x: 199, y: 370, width: 25, height: 25))
@@ -205,53 +176,7 @@ class AddCourse: UIViewController , ColorcollectionviewDelegate {
         }
         return days
     }
-    
-//    @IBAction func confirmday(_ sender: UIButton)
-//    {
-//        if tickBoxsun.isChecked == true {
-//            print("Sunday")
-//            Days[0] = 1
-//            Days.append(Days[0])
-//            print(Days[0])
-//        }
-//        if tickBoxmon.isChecked == true{
-//            print("Monday")
-//            Days[1] = 2
-//            Days.append(Days[1])
-//            print(Days[1])
-//        }
-//        if tickBoxtue.isChecked == true {
-//            print("Tuesday")
-//            Days[2] = 3
-//            Days.append(Days[2])
-//            print(Days[2])
-//        }
-//        if tickBoxwed.isChecked == true {
-//            print("Wednesday")
-//            Days[3] = 4
-//            Days.append(Days[3])
-//            print(Days[3])
-//        }
-//        if tickBoxthu.isChecked == true {
-//            print("Thursday")
-//            Days[4] = 5
-//            Days.append(Days[4])
-//            print(Days[4])
-//        }
-//        if tickBoxfri.isChecked == true {
-//            print("Friday")
-//            Days[5] = 6
-//            Days.append(Days[5])
-//            print(Days[5])
-//        }
-//        if tickBoxsat.isChecked == true {
-//            print("Saturday")
-//            Days[6] = 7
-//            Days.append(Days[6])
-//            print(Days[6])
-//        }
-//    }
-    
+
     /*
     // MARK: - Navigation
 

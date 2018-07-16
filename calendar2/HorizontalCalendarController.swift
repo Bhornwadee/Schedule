@@ -38,6 +38,15 @@ final class HorizontalCalendarController: UIViewController {
     let cressgreen:UIColor = UIColor(red:0.74, green:0.66, blue:0.35, alpha:1.0)
     let green:UIColor = UIColor(red:0.56, green:0.67, blue:0.39, alpha:1.0)
     let purple:UIColor = UIColor(red:0.72, green:0.42, blue:0.62, alpha:1.0)
+    let blackblue:UIColor = UIColor(red:0.37, green:0.53, blue:0.62, alpha:1.0)
+    let blue:UIColor = UIColor(red:0.07, green:0.51, blue:0.67, alpha:1.0)
+    let Marina:UIColor = UIColor(red:0.31, green:0.52, blue:0.75, alpha:1.0)
+    let lightblue:UIColor = UIColor(red:0.64, green:0.83, blue:0.87, alpha:1.0)
+    let brown:UIColor = UIColor(red:0.77, green:0.56, blue:0.44, alpha:1.0)
+    let goldearth:UIColor = UIColor(red:0.87, green:0.61, blue:0.45, alpha:1.0)
+    let lemongrass:UIColor = UIColor(red:0.86, green:0.83, blue:0.61, alpha:1.0)
+    let suaterne:UIColor = UIColor(red:0.77, green:0.71, blue:0.37, alpha:1.0)
+    let greypink:UIColor = UIColor(red:0.92, green:0.81, blue:0.78, alpha:1.0)
     @IBOutlet weak var monthHeaderView: VAMonthHeaderView! {
         didSet {
             let appereance = VAMonthHeaderViewAppearance(
@@ -80,38 +89,35 @@ final class HorizontalCalendarController: UIViewController {
         calendarView.scrollDirection = .horizontal
         
         let dot2 = (date:Date().yesterday,colors:[VADaySupplementary.bottomDots(colorarray2)])
-        var dots = [dot2]
-
+       
+        
+        //160761
         for list in showevent
         {
-            guard let name = list.subjectName ,var start = list.date,let end = list.dateend else {return}
+            guard let name = list.subjectName ,var start = list.date,let end = list.dateend , let color = list.colorimage else {return}
+           
+            
             if name == "America"
             {
-                print("AME")
                 let calendar2 = Calendar.current
                 while start < end {
                     start = calendar2.date(byAdding: .day, value: 1, to: start)!
-                  
-                   // print (dateindex)
+                    let subjectColor = colorEvent(namecolor: color)
                     for days in list.dayofweek
                     {
                         if (start.weekdayOrdinal == days)
                         {
-                            //calendarView.setSupplementaries([(start, [VADaySupplementary.bottomDots([aqua])])])
                             if let dateindex = Search(datestring: start.description) {
-                                
-                                //print (dateindex)
-                                print("found.\(dateindex)")
                                 supplementaries[dateindex].subjects.append("America")
-                                supplementaries[dateindex].color.append(aqua)
+                                supplementaries[dateindex].color.append(subjectColor)
+                                
                             }
                             else{
                                 let supplement = Supplementaries()
                                 supplement.id = start.description // key
                                 supplement.fordate = start
-                                supplement.color.append(aqua)
-                                supplementaries.append(supplement)
-                                print("create new model")
+                                supplement.color.append(subjectColor) //อันเจอก่อนขึ้นสีก่อน
+                                supplementaries.append(supplement) //ไม่เจอก็แอดเข้าไปก่อนรอบนึงจากนั้นมันจะโชว์
                             }
                         }
                     }
@@ -122,27 +128,22 @@ final class HorizontalCalendarController: UIViewController {
                     let calendar2 = Calendar.current
                     while start < end {
                         start = calendar2.date(byAdding: .day, value: 1, to: start)!
-            
+                        let subjectColor = colorEvent(namecolor: color)
                         for days in list.dayofweek
                         {
                             if (start.weekdayOrdinal == days)
                             {
-                                //calendarView.setSupplementaries([(start, [VADaySupplementary.bottomDots([yellow])])])
                                 if let dateindex = Search(datestring: start.description) {
-                                    
-                                    //print (dateindex)
-                                    print("found.\(dateindex)")
                                     supplementaries[dateindex].subjects.append("Brazil")
-                                    supplementaries[dateindex].color.append(yellow)
+                                    supplementaries[dateindex].color.append(subjectColor)
+
                                 }
                                 else{
                                     let supplement = Supplementaries()
                                     supplement.id = start.description // key
                                     supplement.fordate = start
-                                    supplement.color.append(yellow)
+                                    supplement.color.append(subjectColor)
                                     supplementaries.append(supplement)
-                                    
-                                    print("create new model")
                                 }
                             }
                         }
@@ -153,11 +154,23 @@ final class HorizontalCalendarController: UIViewController {
                 let calendar2 = Calendar.current
                 while start < end {
                     start = calendar2.date(byAdding: .day, value: 1, to: start)!
+                    let subjectColor = colorEvent(namecolor: color)
                     for days in list.dayofweek
                     {
                         if (start.weekdayOrdinal == days)
                         {
-                            calendarView.setSupplementaries([(start, [VADaySupplementary.bottomDots([red])])])
+                            if let dateindex = Search(datestring: start.description) {
+                                supplementaries[dateindex].subjects.append("Canada")
+                                supplementaries[dateindex].color.append(subjectColor)
+
+                            }
+                            else{
+                                let supplement = Supplementaries()
+                                supplement.id = start.description // key
+                                supplement.fordate = start
+                                supplement.color.append(subjectColor)
+                                supplementaries.append(supplement)
+                            }
                         }
                     }
                 }
@@ -167,11 +180,22 @@ final class HorizontalCalendarController: UIViewController {
                 let calendar2 = Calendar.current
                 while start < end {
                     start = calendar2.date(byAdding: .day, value: 1, to: start)!
+                    let subjectColor = colorEvent(namecolor: color)
                     for days in list.dayofweek
                     {
                         if (start.weekdayOrdinal == days)
                         {
-                            calendarView.setSupplementaries([(start, [VADaySupplementary.bottomDots([cressgreen])])])
+                            if let dateindex = Search(datestring: start.description) {
+                                supplementaries[dateindex].subjects.append("Denmark")
+                                supplementaries[dateindex].color.append(subjectColor)
+                            }
+                            else{
+                                let supplement = Supplementaries()
+                                supplement.id = start.description // key
+                                supplement.fordate = start
+                                supplement.color.append(subjectColor)
+                                supplementaries.append(supplement)
+                            }
                         }
                     }
                 }
@@ -181,229 +205,150 @@ final class HorizontalCalendarController: UIViewController {
                 let calendar2 = Calendar.current
                 while start < end {
                     start = calendar2.date(byAdding: .day, value: 1, to: start)!
+                    let subjectColor = colorEvent(namecolor: color)
                     for days in list.dayofweek
                     {
                         if (start.weekdayOrdinal == days)
                         {
-                            calendarView.setSupplementaries([(start, [VADaySupplementary.bottomDots([green])])])
+                            if let dateindex = Search(datestring: start.description) {
+                                supplementaries[dateindex].subjects.append("England")
+                                supplementaries[dateindex].color.append(subjectColor)
+
+                            }
+                            else{
+                                let supplement = Supplementaries()
+                                supplement.id = start.description // key
+                                supplement.fordate = start
+                                supplement.color.append(subjectColor)
+                                supplementaries.append(supplement)
+                            }
                         }
                     }
                 }
             }
-            else if name == "France"
+            if name == "France"
             {
                 let calendar2 = Calendar.current
                 while start < end {
                     start = calendar2.date(byAdding: .day, value: 1, to: start)!
+                    let subjectColor = colorEvent(namecolor: color)
                     for days in list.dayofweek
                     {
                         if (start.weekdayOrdinal == days)
                         {
-                         //   print(calendarView.)
-                            calendarView.setSupplementaries([(start, [VADaySupplementary.bottomDots([purple])])])
+                            if let dateindex = Search(datestring: start.description) {
+                                supplementaries[dateindex].subjects.append("France")
+                                supplementaries[dateindex].color.append(subjectColor)
+                            }
+                            else{
+                                let supplement = Supplementaries()
+                                supplement.id = start.description // key
+                                supplement.fordate = start
+                                supplement.color.append(subjectColor)
+                                supplementaries.append(supplement)
+
+                                print("create new model")
+                            }
                         }
                     }
                 }
             }
             let dot = (date:Date(),colors:[VADaySupplementary.bottomDots(colorarray)])
-            //
             var dots = [dot]
-            //            //showcodeui.append(codeui)
-            //            let dot = (date:subject.date,colors:[VADaySupplementary.bottomDots(showcodeui)]) //130761
-            //            dots.append(dot as! (date: Date, colors: [VADaySupplementary]))//130761
-            //            calendarView.setSupplementaries(dots)//130761
             for supplement in supplementaries
             {
-                print(supplement.fordate,supplement.subjects.count)
                 let dot = (date:supplement.fordate,colors:[VADaySupplementary.bottomDots(supplement.color)])
                 dots.append(dot as! (date: Date, colors: [VADaySupplementary]))
-                
+
             }
-            calendarView.setSupplementaries(dots)//130761
+            calendarView.setSupplementaries(dots)
         }
-        
-//        for subject in showevent
-//        {
-//            var showcodeui = [UIColor]()
-//            guard var date = subject.date , let dateend = subject.dateend , let subjectn = subject.subjectName  else {return}
-//              var arraychoosecolor = ["blackblue","blue","Marina","Aqua","lightblue","brown","goldearth","cressgreen","green","lemongrass","suaterne","yellow","red","purple","greypink"]
-////            for icolor in arraychoosecolor
-////            {  //var codeui:UIColor!
-//////                if subject.colorimage == icolor
-//////                {
-////////                    if icolor == "blackblue"
-////////                    {
-////////                        let codeui = UIColor(red:0.37, green:0.53, blue:0.62, alpha:1.0)
-////////                        showcodeui.append(codeui)
-////////                        print(subjectn,codeui)
-////////                    }
-////////                    if icolor == "blue"
-////////                    {
-////////                         let codeui = UIColor(red:0.07, green:0.51, blue:0.67, alpha:1.0)
-////////                        print(subjectn,codeui)
-////////                        showcodeui.append(codeui)
-////////                    }
-////////                    if icolor == "Marina"
-////////                    {
-////////                        let codeui = UIColor(red:0.31, green:0.52, blue:0.75, alpha:1.0)
-////////                        print(subjectn,codeui)
-////////                        showcodeui.append(codeui)
-////////                    }
-////////                    if icolor == "Aqua"
-////////                    {
-////////                        let codeui = UIColor(red:0.52, green:0.81, blue:0.82, alpha:1.0)
-////////                        print(subjectn,codeui)
-////////                        showcodeui.append(codeui)
-////////                    }
-////////                    if icolor == "lightblue"
-////////                    {
-////////                        let codeui = UIColor(red:0.64, green:0.83, blue:0.87, alpha:1.0)
-////////                        print(subjectn,codeui)
-////////                        showcodeui.append(codeui)
-////////                    }
-////////                    if icolor == "brown"
-////////                    {
-////////                        let codeui = UIColor(red:0.77, green:0.56, blue:0.44, alpha:1.0)
-////////                        print(subjectn,codeui)
-////////                        showcodeui.append(codeui)
-////////                    }
-////////                    if icolor == "goldearth"
-////////                    {
-////////                        let codeui = UIColor(red:0.87, green:0.61, blue:0.45, alpha:1.0)
-////////                        print(subjectn,codeui)
-////////                        showcodeui.append(codeui)
-////////                    }
-////////                    if icolor == "crossgreen"
-////////                    {
-////////                        let codeui = UIColor(red:0.74, green:0.66, blue:0.35, alpha:1.0)
-////////                        print(subjectn,codeui)
-////////                        showcodeui.append(codeui)
-////////                    }
-////////                    if icolor == "green"
-////////                    {
-////////                        let codeui = UIColor(red:0.56, green:0.67, blue:0.39, alpha:1.0)
-////////                        print(subjectn,codeui)
-////////                        showcodeui.append(codeui)
-////////                    }
-////////                    if icolor == "lemongrass"
-////////                    {
-////////                        let codeui = UIColor(red:0.86, green:0.83, blue:0.61, alpha:1.0)
-////////                        print(subjectn,codeui)
-////////                        showcodeui.append(codeui)
-////////                    }
-////////                    if icolor == "suaterne"
-////////                    {
-////////                        let codeui = UIColor(red:0.77, green:0.71, blue:0.37, alpha:1.0)
-////////                        print(subjectn,codeui)
-////////                        showcodeui.append(codeui)
-////////                    }
-////////                    if icolor == "yellow"
-////////                    {
-////////                        let codeui = UIColor(red:0.99, green:0.69, blue:0.32, alpha:1.0)
-////////                        print(subjectn,codeui)
-////////                        showcodeui.append(codeui)
-////////                    }
-////////                    if icolor == "red"
-////////                    {
-////////                        let codeui = UIColor(red:0.84, green:0.24, blue:0.38, alpha:1.0)
-////////                        print(subjectn,codeui)
-////////                        showcodeui.append(codeui)
-////////                    }
-////////                    if icolor == "purple"
-////////                    {
-////////                        let codeui = UIColor(red:0.72, green:0.42, blue:0.62, alpha:1.0)
-////////                        print(subjectn,codeui)
-////////                        showcodeui.append(codeui)
-////////                    }
-////////                    if icolor == "greypink"
-////////                    {
-////////                        let codeui = UIColor(red:0.92, green:0.81, blue:0.78, alpha:1.0)
-////////                        print(subjectn,codeui)
-////////                        showcodeui.append(codeui)
-////////                    }
-//////
-//////            //calendarView.setSupplementaries([(date, [VADaySupplementary.bottomDots([UIColor.green])])])
-//////            //calendarView.setSupplementaries([(dateend, [VADaySupplementary.bottomDots([UIColor.red])])])
-//////
-            
-
-////
-//////            let dot = (date:Date(),colors:[VADaySupplementary.bottomDots(colorarray)])
-////
-//////            let dots = [dot,dot2]
-////            //showcodeui.append(codeui)
-////            let dot = (date:subject.date,colors:[VADaySupplementary.bottomDots(showcodeui)]) //130761
-////            dots.append(dot as! (date: Date, colors: [VADaySupplementary]))//130761
-////            calendarView.setSupplementaries(dots)//130761
-////
-////                }
-//
-//            //var dots = [dot]
-//            }
-        
-    //comment
-//        let date2 = Date()
-//        let calendar2 = Calendar.current
-//        let hour2 = calendar2.component(.hour, from: date2)
-//        let minutes2 = calendar2.component(.minute, from: date2)
-//        for itemsubject in showevent
-//        {
-//            guard let datestart = itemsubject.date, let dateend = itemsubject.dateend, let subjectn = itemsubject.subjectName else {return}
-//            if(date2.isInRange(date: datestart , and: dateend))
-//            {
-//                calendarView.setSupplementaries([(date2, [VADaySupplementary.bottomDots([UIColor.magenta,.purple])])])
-//                for days in itemsubject.dayofweek
-//                {
-//                    if (date2.weekdayOrdinal == days)
-//                    {
-//                        //var subcount = subjectn.count
-//                        print(subjectn)
-//                        calendarView.setSupplementaries([(date2, [VADaySupplementary.bottomDots([UIColor.magenta,.purple])])])
-//                    }
-//                }
-//            }
-//        }
-        //comment
-        
-        //แสดงจุดวันที่มีวิชา
-    
-//        for subject in showevent
-//        {
-//            guard var date = subject.date , let dateend = subject.dateend  else {return}
-//            //calendarView.setSupplementaries([(date, [VADaySupplementary.bottomDots([UIColor.green])])])
-//            //calendarView.setSupplementaries([(dateend, [VADaySupplementary.bottomDots([UIColor.red])])])
-//
-//            let calendar2 = Calendar.current
-//            while date < dateend {
-//                date = calendar2.date(byAdding: .day, value: 1, to: date)!
-//                for days in subject.dayofweek
-//                {
-//                    print(days,subject.subjectName)
-//                    print("-----")
-//                    if (date.weekdayOrdinal == days)
-//                    {
-//                        print(subject.subjectName)
-//                        calendarView.setSupplementaries([(date, [VADaySupplementary.bottomDots([UIColor(red:0.27, green:0.66, blue:0.67, alpha:1.0)])])])
-//                    }
-//                }
-//            }
-         //แสดงจุดวันที่มีวิชา
-        
-        
-        //กำหนดค่าtoday -> ^ up
-        
-        //show dot color and given date
-//        calendarView.setSupplementaries([
-//            (Date().addingTimeInterval(-(60 * 60 * 70)), [VADaySupplementary.bottomDots([.red, .magenta])]),
-//            (Date().addingTimeInterval((60 * 60 * 110)), [VADaySupplementary.bottomDots([.red])]),
-//            (Date().addingTimeInterval((60 * 60 * 370)), [VADaySupplementary.bottomDots([.blue, .darkGray])]),
-//            (Date().addingTimeInterval((60 * 60 * 430)), [VADaySupplementary.bottomDots([.orange, .purple, .cyan])])
-//            ])//dot in date
-
-            
             view.addSubview(calendarView)
 }
+    
+    func getEvent(name:String,start:Date,end:Date,list:Subject,color:Subject)
+    {   var startdate = start
+        let calendar2 = Calendar.current
+        while startdate < end {
+            startdate = calendar2.date(byAdding: .day, value: 1, to: startdate)!
+            for days in list.dayofweek
+            {
+                if (start.weekdayOrdinal == days)
+                {
+                    if let dateindex = Search(datestring: start.description) {
+                        //print("found.\(dateindex)")
+                        supplementaries[dateindex].subjects.append(name)
+                        supplementaries[dateindex].color.append(.black)
+                    }
+                    else
+                    {
+                        let supplement = Supplementaries()
+                        supplement.id = start.description
+                        supplement.fordate = start
+                        supplement.color.append(.black)
+                        supplementaries.append(supplement)
+                        //print("create new model")
+                    }
+                }
+            }
+        }
+    }
 
+    func colorEvent(namecolor:String) -> UIColor
+    {
+        var colorui:UIColor!
+        switch namecolor{
+        case ("blackblue"):
+            colorui = UIColor(red:0.37, green:0.53, blue:0.62, alpha:1.0)
+        //print("blackblue")
+        case ("blue"):
+            colorui = UIColor(red:0.07, green:0.51, blue:0.67, alpha:1.0)
+        //print("blue")
+        case ("Marina"):
+            colorui = UIColor(red:0.31, green:0.52, blue:0.75, alpha:1.0)
+        //print("Marina")
+        case ("Aqua"):
+            colorui = UIColor(red:0.52, green:0.81, blue:0.82, alpha:1.0)
+        //print("Aqua")
+        case ("lightblue"):
+            colorui = UIColor(red:0.64, green:0.83, blue:0.87, alpha:1.0)
+        // print("lightblue")
+        case ("brown"):
+            colorui = UIColor(red:0.77, green:0.56, blue:0.44, alpha:1.0)
+        //print("brown")
+        case ("goldearth"):
+            colorui = UIColor(red:0.87, green:0.61, blue:0.45, alpha:1.0)
+        //print("goldearth")
+        case ("cressgreen"):
+            colorui = UIColor(red:0.74, green:0.66, blue:0.35, alpha:1.0)
+        //print("cressgreen")
+        case ("green"):
+            colorui = UIColor(red:0.56, green:0.67, blue:0.39, alpha:1.0)
+        //print("green")
+        case ("lemongrass"):
+            colorui = UIColor(red:0.86, green:0.83, blue:0.61, alpha:1.0)
+        //print("lemongrass")
+        case ("suaterne"):
+            colorui = UIColor(red:0.77, green:0.71, blue:0.37, alpha:1.0)
+        //print("suaterne")
+        case ("yellow"):
+            colorui = UIColor(red:0.99, green:0.69, blue:0.32, alpha:1.0)
+        //print("yellow")
+        case ("red"):
+            colorui = UIColor(red:0.84, green:0.24, blue:0.38, alpha:1.0)
+        //print("red")
+        case ("purple"):
+            colorui = UIColor(red:0.72, green:0.42, blue:0.62, alpha:1.0)
+        //print("purple")
+        case ("greypink"):
+            colorui = UIColor(red:0.92, green:0.81, blue:0.78, alpha:1.0)
+        //print("greypink")
+        default:
+            print("day")
+        }
+        return colorui
+    }
+    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
@@ -430,66 +375,7 @@ final class HorizontalCalendarController: UIViewController {
 //        calendarView.changeViewType()
     }
     
-    func subjectday(today:Date)
-    {
-        for item in showevent
-        {
-            guard let datestart = item.date, let dateend = item.dateend, let subjectn = item.subjectName else {return}
-                        if(today.isInRange(date: datestart , and: dateend))
-                        {
-                            for days in item.dayofweek
-                            {
-                                if (today.weekdayOrdinal == days)
-                                {
-                                    //var subcount = subjectn.count
-                                    print(subjectn)
-                                }
-                            }
-                        }
-        }
-    }
-    
-//    func getsubjectday(today: Date)
-//    {
-//        for itemsubject in showevent
-//        {
-//            guard let datestart = itemsubject.date, let dateend = itemsubject.dateend, let subjectn = itemsubject.subjectName else {return}
-//             if(today.isInRange(date: datestart , and: dateend))
-//             {
-//                for days in itemsubject.dayofweek
-//                {
-//                    if (today.weekdayOrdinal == days)
-//                    {
-//                        //var subcount = subjectn.count
-//
-//                        print(subjectn)
-//                    }
-//                }
-//             }
-//        }
-//    }
-    
-//    func getevent(today: Date)
-//    {
-//        for item in showevent
-//        {
-//            guard let datestart = item.date, let dateend = item.dateend, let subjectn = item.subjectName else {return}
-//
-//            //print(datestart,dateend,subjectn)
-//
-//            if(today.isInRange(date: datestart , and: dateend))
-//            {
-//                for days in item.dayofweek
-//                {
-//                    if (today.weekdayOrdinal == days)
-//                    {
-//                        //print("found")
-//                        calendarView.setSupplementaries([(today, [VADaySupplementary.bottomDots([UIColor.blue,.red])])])
-//                    }
-//                }
-//            }
-//        }
-//    }
+
     }
 
 
@@ -570,11 +456,7 @@ extension HorizontalCalendarController: VACalendarViewDelegate {
     func selectedDates(_ dates: [Date]) {
         //calendarView.startDate = dates.last ?? Date()
         guard let dateselect = dates.last else {return}
-        //calendarView.setSupplementaries([(dateselect, [VADaySupplementary.bottomDots([UIColor.blue,.white,.red])])])
         print(dateselect)
-        //subjectday(today:dateselect)
-        //getsubjectday(today: dateselect)
-        //getevent(today: dateselect)
     }
     
 }

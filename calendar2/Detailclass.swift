@@ -53,12 +53,7 @@ class Detailclass: UIViewController {
     
     @IBAction func addclasscon(_ sender: UIButton)
     {
-//        guard  let coursename = coursenamesh.text else { return }
-//        guard let classType = classTypesh.text else {return}
-//        guard let howoften = howoftensh.text else {return}
-//        guard let locations = Locationssh.text else {return}
-//        guard let instructor = instructorsh.text else {return}
-        //let  = DMYClasspicker.date
+
         
     }
     

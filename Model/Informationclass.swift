@@ -33,14 +33,6 @@ class Subject: NSObject, NSCoding{
         self.dateend = dateend
         self.colorimage = colorimage
         self.dayofweek = dayofweek
-//        self.classType = classType //2
-//        self.timeStart = timeStart
-//        self.timeEnd = timeEnd
-//        self.howoftenclass = howoftenclass
-//        self.dateStart = dateStart
-//        self.dateEnd = dateEnd
-//        self.location = location
-//        self.instructor = instructor
 
     }
     
@@ -50,14 +42,7 @@ class Subject: NSObject, NSCoding{
         aCoder.encode(dateend,forKey: "dateend")
         aCoder.encode(colorimage, forKey: "colorimage")
         aCoder.encode(dayofweek, forKey: "dayofweek")
-//        aCoder.encode(classType, forKey: "classType")//3
-//        aCoder.encode(timeStart, forKey: "timeStart")
-//        aCoder.encode(timeEnd, forKey: "timeEnd")
-//        aCoder.encode(howoftenclass, forKey: "howoftenclass")
-//        aCoder.encode(dateStart, forKey: "dateStart")
-//        aCoder.encode(dateEnd, forKey: "dateEnd")
-//        aCoder.encode(location, forKey: "location")
-//        aCoder.encode(instructor, forKey: "instructor")
+
         
 
     }
@@ -68,14 +53,7 @@ class Subject: NSObject, NSCoding{
         dateend = aDecoder.decodeObject(forKey: "dateend") as? Date ?? nil
         colorimage = aDecoder.decodeObject(forKey: "colorimage") as? String ?? ""
         dayofweek = aDecoder.decodeObject(forKey: "dayofweek") as! [Int]
-//        classType = aDecoder.decodeObject(forKey: "classType") as? String ?? nil //4
-//        timeStart = aDecoder.decodeObject(forKey: "timeStart") as? Date ?? nil
-//        timeEnd = aDecoder.decodeObject(forKey: "timeEnd") as? Date ?? nil
-//        howoftenclass = aDecoder.decodeObject(forKey: "howoftenclass") as? String ?? ""
-//        dateStart = aDecoder.decodeObject(forKey: "dateStart") as? Date ?? nil
-//        dateEnd = aDecoder.decodeObject(forKey: "dateEnd") as? Date ?? nil
-//        location = aDecoder.decodeObject(forKey: "location") as? String ?? ""
-//        instructor = aDecoder.decodeObject(forKey: "instructor") as? String ?? ""
+
 
     }
 }

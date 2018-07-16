@@ -43,7 +43,6 @@ class DatePickerViewController: UIViewController, JBDatePickerViewDelegate, UITa
         tableviewsh.delegate = self
         tableviewsh.dataSource = self
          tableviewsh.separatorStyle = .none
-        //print(showsubject.count)
         // Do any additional setup after loading the view, typically from a nib.
         datePickerView.delegate = self
         
@@ -80,87 +79,28 @@ class DatePickerViewController: UIViewController, JBDatePickerViewDelegate, UITa
     
     // MARK: - JBDatePickerViewDelegate
     
-    //    func didSelectDay(_ dayView: JBDatePickerDayView) {
-    //
-    ////        self.performSegue(withIdentifier: "unwindFromDatepicker", sender: self)
-    //        print("date selected: \(String(describing: dayView.date))")
-    //    }
-    
     func didSelectDay(_ dayView: JBDatePickerDayView)
     {
-        //self.performSegue(withIdentifier: "unwindFromDatepicker", sender: self)
         guard let date = dayView.date else {return}
         print("didselect")
-        
-        //let deviceLocale = Locale.current.identifier //getเวลาจากเครื่อง
-        //let formatter = DateFormatter();
-        //formatter.locale = Locale(identifier: deviceLocale)
-        //formatter.dateFormat = "dd-MM-yyyy"; //format dmy
-        //formatter.dateFormat = "EEEE, MMMM dd, yyyy" //Day of week
-        //let dateString = formatter.string(from: date)
-        filtertodayclass(today: date)
-        //print("date pick \(dateString)")
-        //.dateString = dateString
-        //print(dateString)
-        //self.dismiss(animated: true, completion: nil)
     }
     
-//    func filtertodayclass(today:Date)
-//    {
-//        //let today = today
-//        print("today \(today.weekdayOrdinal)")
-//        todayclass.removeAll()
-//        for item in showsubject
-//        {
-//            guard let subject = item.date else{return}
-//            if(subject.weekdayOrdinal == today.weekdayOrdinal)
-//            {
-//             //   print(item.subjectName)
-//                todayclass.append(item)
-//            }
-//        }
-//        // print(todayclass)
-//        tableviewsh.reloadData()
-//    }
-        
-
         func filtertodayclass(today:Date)
         {
-            //let today = today
-            //print("today \(today.weekdayOrdinal)")
             todayclass.removeAll()
-            // print(todayclass)
-
             for item in showsubject
             {
                 guard let datestart = item.date, let dateend = item.dateend else{return}
                 let subname = item.subjectName
-        //print(today.weekdayOrdinal,item.dayofweek)
-                
                 let dayy = datestart >= today || today < dateend
                 print(subname)
                 print(dayy)
-                
-                //compare two date more or less
-//                if datestart.compare(dateend) == .orderedAscending
-//                {
-//                    print("first date is smaller than second date")
-//                }
-//                else if datestart.compare(dateend) == .orderedDescending
-//                {
-//                    print("first date is grater than second date")
-//                }
-//                else { print("the both are equal") }
-//                print(datestart >= today,today < dateend)
-                
-                //if (datestart >= today || today < dateend)
                 if(today.isInRange(date: datestart, and: dateend))
                 {
                 for days in item.dayofweek
                 {
                     if (today.weekdayOrdinal == days)
                     {
-                        //print("found")
                         todayclass.append(item)
                     }
                  }
@@ -238,7 +178,6 @@ class DatePickerViewController: UIViewController, JBDatePickerViewDelegate, UITa
         cell.courseimg1.image = images
         cell.courselbl1.text = coursetext
          cell.selectionStyle = .none
-        //cell.backgroundColor = UIColor(red:0.93, green:0.94, blue:0.94, alpha:1.0)
         return cell
     }
     

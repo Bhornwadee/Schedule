@@ -21,7 +21,6 @@ class Showdatafromplistcourse: UIViewController,UITableViewDelegate, UITableView
         TablePlistcourse.delegate = self
         TablePlistcourse.dataSource = self
         TablePlistcourse.separatorStyle = .none
-        // plistService.setDefaultloadData()
         print("total")
         
         // Do any additional setup after loading the view.
@@ -83,20 +82,11 @@ class Showdatafromplistcourse: UIViewController,UITableViewDelegate, UITableView
         cell.courselbl.text = coursetxt
         cell.coursedate.text = datec
         cell.courseenddate.text = datee
-        //print(cell)
         return cell
         
     }
     
-    //    func fetchSsmester(){
-    //        for subject in plistService.getAllSubject(){
-    //            guard let subName = subject.subjectName else{return}
-    //            print("\(subName)")
-    //        }
-    //        print("fetch \(plistService.getAllSubject().count)")
-    //        TablePlistcourse.reloadData()
-    //    }
-    
+
     func numberOfSections(in tableView: UITableView) -> Int //section ที่เราจะแสดงในส่วนของtableview
     {
         //ดึงอินเดกของอาเรออกมา
@@ -120,37 +110,16 @@ class Showdatafromplistcourse: UIViewController,UITableViewDelegate, UITableView
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle,forRowAt indexPath: IndexPath)
     {
-//        print("IndexPath",indexPath)
-//        print("IndexPath Sec",indexPath.section)
-//        print("IndexPath Row",indexPath.row)
         if editingStyle == .delete
         {
             TablePlistcourse.beginUpdates()
             guard let subname = semester[indexPath.row].subjectName else {return}
             plistService.Search(subjectname: subname)
-            //print(subname)
             semester.remove(at: indexPath.row)
-            //print(semester)
-            //print(semester.remove(at: indexPath))
             TablePlistcourse.deleteRows(at: [indexPath], with: .automatic)
             TablePlistcourse.endUpdates()
-           // savetop.append(semester[indexPath.row])
-           // print(savetop)
         }
      
-        //TablePlistcourse.beginUpdates()
-        
-        //semester[indexPath.section]
-        ///semester.remove(at: indexPath.row)
-        ////products[indexPath.section].productLists.remove(at: indexPath.row) //ลบข้อมูลที่อยู่ในอาเรย์
-        
-        ///TablePlistcourse.deleteRows(at: [indexPath.row], with: .automatic)
-        //TablePlistcourse.deleteRows(at: [indexPath], with: .automatic)
-        //TablePlistcourse.deleteRows(at: [indexPath.init(row: indexPath.row,section)], with: .fade)
-        //        tableView.deleteRows(at: [IndexPath.init(row: indexPath.row, section: indexPath.section)],with: .fade)//ลบข้อมูลบนtable view
-        //TablePlistcourse.endUpdates()
-        //TablePlistcourse.reloadData()
-        //        print(semester)
     }
     
     func  refreshdata()
