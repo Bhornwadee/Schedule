@@ -226,7 +226,7 @@ final class HorizontalCalendarController: UIViewController {
                     }
                 }
             }
-            if name == "France"
+            else if name == "France"
             {
                 let calendar2 = Calendar.current
                 while start < end {
@@ -247,6 +247,33 @@ final class HorizontalCalendarController: UIViewController {
                                 supplement.color.append(subjectColor)
                                 supplementaries.append(supplement)
 
+                                print("create new model")
+                            }
+                        }
+                    }
+                }
+            }
+            else if name == "Croatia"
+            {
+                let calendar2 = Calendar.current
+                while start < end {
+                    start = calendar2.date(byAdding: .day, value: 1, to: start)!
+                    let subjectColor = colorEvent(namecolor: color)
+                    for days in list.dayofweek
+                    {
+                        if (start.weekdayOrdinal == days)
+                        {
+                            if let dateindex = Search(datestring: start.description) {
+                                supplementaries[dateindex].subjects.append("Croatia")
+                                supplementaries[dateindex].color.append(subjectColor)
+                            }
+                            else{
+                                let supplement = Supplementaries()
+                                supplement.id = start.description // key
+                                supplement.fordate = start
+                                supplement.color.append(subjectColor)
+                                supplementaries.append(supplement)
+                                
                                 print("create new model")
                             }
                         }

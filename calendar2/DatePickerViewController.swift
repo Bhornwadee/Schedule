@@ -82,6 +82,7 @@ class DatePickerViewController: UIViewController, JBDatePickerViewDelegate, UITa
     func didSelectDay(_ dayView: JBDatePickerDayView)
     {
         guard let date = dayView.date else {return}
+        filtertodayclass(today: date)
         print("didselect")
     }
     
