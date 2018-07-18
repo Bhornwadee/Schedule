@@ -376,7 +376,6 @@ final class HorizontalCalendarController: UIViewController {
                 if (start.weekdayOrdinal == days)
                 {
                     if let dateindex = Search(datestring: start.description) {
-                        //print("found.\(dateindex)")
                         supplementaries[dateindex].subjects.append(name)
                         supplementaries[dateindex].color.append(.black)
                     }
@@ -387,7 +386,6 @@ final class HorizontalCalendarController: UIViewController {
                         supplement.fordate = start
                         supplement.color.append(.black)
                         supplementaries.append(supplement)
-                        //print("create new model")
                     }
                 }
             }
