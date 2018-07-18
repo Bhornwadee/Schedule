@@ -94,8 +94,8 @@ class DatePickerViewController: UIViewController, JBDatePickerViewDelegate, UITa
                 guard let datestart = item.date, let dateend = item.dateend else{return}
                 let subname = item.subjectName
                 let dayy = datestart >= today || today < dateend
-                print(subname)
-                print(dayy)
+               // print(subname)
+                //print(dayy)
                 if(today.isInRange(date: datestart, and: dateend))
                 {
                 for days in item.dayofweek
